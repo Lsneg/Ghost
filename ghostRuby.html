@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html> <html>     <head>         <meta http-equiv="Content-Type"
+content="text/html; charset=utf-8">         <title>Ghost by 4pr2</title>
+<link rel="stylesheet" type="text/css" href="ghost.css" media="all" />
+<link rel="shortcut icon" type="image/ico" href="imgages/favicon1.ico" />
+<link rel="icon" href="imgages/favicon.ico" type="image/x-icon" />
+<style type="text/css">         </style>         <script
+type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
+	</script>
+		<script type="text/javascript">
+			$("document").ready(function() {
+				$(window).resize(resizeWindow);
+			});
+			function resizeWindow()
+			{
+				$("#sizewindow").html( + $(window).width() + "x" +$(window).height());
+			}
+	</script>
+</head>
+
+<body>
+<div class="ghost" id="ghost-html">
+	<div class="box">
+
+		<div class="text-navbar inline">
+			
+			<div>
+				<a href="ghostHTML.html">
+					<span class="title">HTML</span>
+				</a>
+			</div>
+			
+			<div>
+				<a href="ghostJS.html">
+					<span class="title">JS</span>
+				</a>
+			</div>
+			
+			<div class="active">
+				<a href="#startpage">
+					<span class="title">Ruby</span>
+				</a>
+			</div>
+
+
+		</div>
+
+		<menu class="leftnav">
+			<li>
+				<a href="#workstart"><span class="dot"><b></b>Начало работы</span></a></li>
+			<li>
+				<a href="#forms"><span class="dot"><b></b>Форма</span></a>
+				
+			</li>
+			<menu class="sub-menu">
+					<li><a href="#input"><span class="dot">Input</span></a></li>
+					<li><a href="#checkbox-radio"><span class="dot">Checkbox и radio</span></a></li>
+					<li><a href="#textarea"><span class="dot">Textarea</span></a></li>
+					<li><a href="#select"><span class="dot">Select</span></a></li>
+				</menu>	
+			<li><a href="#select"><span class="dot"><b></b>Таблица</span></a></li>
+			
+		</menu>
+
+		<div class="workplace">
+			<div class="sect-header-first" id="startpage">
+				<h1>Добро пожаловать в GHOST </h1>
+				<p><small>version1.030.09.12</small><br/>
+					Здесь собраны все заготовки студии 4pr&sup2; для веб-строительства.
+				</p>
+				<h2>Ruby on rails. Компоненты</h2>
+			</div>
+
+			<div class="sect-header" id="workstart">
+				<h1>Начало работы</h1>
+			</div>
+			<p>Для начала необходимо подключить стили:</p>
+<pre><ol><li><span class="doc">&lt;!DOCTYPE html&gt;</span>
+<li><span class="tag">&lt;html&gt;</span>
+<li>  <span class="tag">&lt;head&gt;</span>
+<li>    <span class="tag">&lt;link <span class="atr">href=<span class="val">"ghost.css"</span> rel=<span class="val">"stylesheet"</span></span>&gt;</span>
+<li>  <span class="tag">&lt;&#47;head&gt;</span>
+<li><span class="tag">&lt;&#47;html&gt;</span>
+</ol></pre>
+
+			<div class="sect-header" id="forms">
+				<h1>Формы</h1>
+			</div>
+
+			<h2 id="input">Input</h2>
+			<p>Самый обычный <code>&lt;input&gt;</code> :</p>
+			<div class="example">
+				<form>
+					<label for="inp-example">Имя лейбла</label><br/>
+					<input type="text" id="inp-example">
+				</form>
+			</div>
+
+<pre><ol><li><span class="tag">&lt;form&gt;</span><li>  <span class="tag">&lt;label <span class="atr">for=<span class="val">"inp-example"</span></span>&gt;</span><span>Имя лейбла</span><span class="tag">&lt;&#47;label&gt;</span>
+<li>  <span class="tag">&lt;input <span class="atr">type=<span class="val">"text"</span></span> <span class="atr">id=<span class="val">"inp-example"</span></span>&gt;</span><li><span class="tag">&lt;&#47;form&gt;</span>
+</ol></pre>
+			<br/>
+
+			<h2 id="checkbox-radio">Checkbox</h2>
+			<p>Чекбокс необходимо использовать внутри тега <code>&lt;label class="checkbox"&gt;</code> с описанием значения.</p>
+			<span class="note">Обязательно используйте <code><span class="atr">class=<span class="val">"checkbox"</span></span></code> при выстраивании чекбоксов в линию!
+			<br/>В других случаях применять класс не обязательно.</span>
+			<div class="example">
+				<label class="checkbox">
+					<input type="checkbox">Поставить галочку
+				</label>
+			</div>
+
+<pre><ol><li><span class="tag">&lt;label <span class="atr">class=<span class="val">"checkbox"</span></span>&gt;</span>
+<li>  <span class="tag">&lt;input <span class="atr">type=<span class="val">"checkbox"</span></span>&gt;</span> <span>Имя лейбла</span>
+<li><span class="tag">&lt;&#47;label&gt;</span>
+</ol></pre>
+			<br/>
+			
+			<h2 id="checkbox-radio">Radio</h2>
+			<p>Как и чекбоксы, радио-кнопки необходимо помещать в <code>&lt;label&gt;</code>, который в свою очередь должен иметь класс <code>radio</code>. Чтобы определить один из елементов выбраным по умолчанию, необходимо ему добавить свойство <code>&lt;checked&gt;</code>.
+			</p>
+			<div class="example">
+				<label class="radio">
+					<input type="radio" name="radio" checked>Левша
+				</label>
+				<label class="radio">
+					<input type="radio" name="radio">Правша
+				</label>
+			</div>
+
+<pre><ol><li><span class="tag">&lt;label <span class="atr">class=<span class="val">"radio"</span></span>&gt;</span>
+<li>  <span class="tag">&lt;input <span class="atr">type=<span class="val">"radio"</span></span> <span class="atr">name=<span class="val">"radio"</span></span> <span class="atr">checked</span>&gt;</span><span>Левша</span>
+<li><span class="tag">&lt;&#47;label&gt;</span>
+<li><span class="tag">&lt;label <span class="atr">class=<span class="val">"radio"</span></span>&gt;</span>
+<li>  <span class="tag">&lt;input <span class="atr">type=<span class="val">"radio"</span></span> <span class="atr">name=<span class="val">"radio"</span></span>&gt;</span><span>Правша</span>
+<li><span class="tag">&lt;&#47;label&gt;</span>
+</ol></pre>
+			<br/>
+
+			<h2 id="textarea">Textarea</h2>
+			<p>Высоту тектового поля можна задавать с помошью атрибута <code>rows</code>.</p>
+			<div class="example">
+				<textarea rows="3"></textarea>
+			</div>
+
+<pre><ol><li><span class="tag">&lt;textarea <span class="atr">rows=<span class="val">"3"</span></span>&gt;</span><span class="tag">&lt;&#47;textarea&gt;</span>
+</ol></pre>
+			<br/>
+
+			<h2 id="select">Select</h2>
+			<p>С выпадающим списком:</p>
+			<div class="example">
+				<select>
+				  <option>Мужик</option>
+				  <option>Баба</option>
+				  <option>Таиланд</option>
+				  <option>Не определено</option>
+				</select>
+			</div>
+
+<pre><ol><li><span class="tag">&lt;select&gt;</span>
+<li>  <span class="tag">&lt;option&gt;</span><span>Мужик</span><span class="tag">&lt;&#47;option&gt;</span>
+<li>  <span class="tag">&lt;option&gt;</span><span>Баба</span><span class="tag">&lt;&#47;option&gt;</span>
+<li>  <span class="tag">&lt;option&gt;</span><span>Таиланд</span><span class="tag">&lt;&#47;option&gt;</span>
+<li>  <span class="tag">&lt;option&gt;</span><span>Не определено</span><span class="tag">&lt;&#47;option&gt;</span>
+<li><span class="tag">&lt;&#47;select&gt;</span>
+</ol></pre>
+			<br/>
+			<p>Для возможности выбора нескольких элементов необходимо добавить свойство <code>"multiple"</code> </p>
+			<div class="example">
+				<select multiple="multiple">
+				  <option>Мужик</option>
+				  <option>Баба</option>
+				  <option>Таиланд</option>
+				  <option>Не определено</option>
+				</select>
+			</div>
+
+<pre><ol><li><span class="tag">&lt;select <span class="atr">multiple=<span class="val">"multiple"</span></span>&gt;</span>
+<li>  <span class="tag">&lt;option&gt;</span><span>Мужик</span><span class="tag">&lt;&#47;option&gt;</span>
+<li>  <span class="tag">&lt;option&gt;</span><span>Баба</span><span class="tag">&lt;&#47;option&gt;</span>
+<li>  <span class="tag">&lt;option&gt;</span><span>Таиланд</span><span class="tag">&lt;&#47;option&gt;</span>
+<li>  <span class="tag">&lt;option&gt;</span><span>Не определено</span><span class="tag">&lt;&#47;option&gt;</span>
+<li><span class="tag">&lt;&#47;select&gt;</span>
+</ol></pre>
+			<br/>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>	<form>
+			<table>
+				<tr>
+					<td><label for='i-name'>Имя</label></td>
+					<td>
+						<input type="text" id="i-name" name="name">
+					</td>
+				</tr>
+				<tr>
+					<td>Фамилия</td>
+					<td><input type="text" name="name">
+					</td>
+				</tr>
+				<tr>
+					<td>Компания</td>
+					<td><input type="text" name="name">
+					</td>
+				</tr>
+				<tr>
+					<td>Сколько лет</td>
+					<td><select>
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>Старый пердун</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Какие нравяться?</td>
+					<td><select multiple="multiple">
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>12</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Голосовать</td>
+					<td>
+						<label class="checkbox">
+   							<input type="checkbox"> Голосую за Лупана
+						</label>
+					</td>
+  				</tr>
+  				<tr>
+					<td>А если найду?</td>
+					<td class="search">
+   						
+   						<input type="text"><button type="submit">Поиск</button>
+  					
+					</td>
+  				</tr>
+				<tr>
+					<td>Опиши себя</td>
+					<td>
+						<textarea rows="3"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>Политические взгляды</td>
+					<td>
+						<label class="radio">
+							<input type="radio" name="optionsRadios" checked>Левша
+						</label>
+						<label class="radio">
+							<input type="radio" name="optionsRadios">Правша
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button type="text" name="name">Сохранить</button>
+						<button type="text" name="name" class="gray">Отмена</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+			<div class="clear"></div>
+		</div>		
+	</div>
+	<span class="adaptive">&nbsp;</span>
+	<div id="sizewindow"></div>
+	<br class="clear"/>
+</div>	
+</body>
+</html>
