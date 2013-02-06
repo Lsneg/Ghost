@@ -1,0 +1,28 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <script src="ghost.js"></script>
+    <style>
+     	#ids2{display:block; }
+    </style>
+</head>
+<body>
+  	<div id="ids">test</div>
+  	<div id="ids3">test1</div>
+  	<div id="ids2">test2</div>
+</body>
+    <script type="text/javascript">
+        window.onload = function(){
+        	_ghost.getById("ids").onCl('click',function(){
+        			//alert("asdasdas");
+        			_ghost.getById("ids2").css('color','red');
+        			//_ghost.getById("ids2").show;
+        			//_ghost.getById("ids2").toggle_disp();
+        	});
+
+		}     
+    </script>
+</html>
