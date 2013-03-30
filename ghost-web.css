@@ -1,0 +1,133 @@
+.ghost h2,
+.ghost h3,
+.ghost p,
+.ghost .note{
+	margin-right: 100px;
+}
+
+.ghost h2{
+	padding-top: 30px;
+}
+
+.ghost pre{
+	border-radius: 2px 0 0 2px;
+}
+
+.ghost .text-navbar{
+	margin-top: 15px; 
+	margin-left: 30px; 
+	clear: both;
+	position: absolute;
+	background: transparent;
+	box-shadow: inset 0 0 1px rgba(0,0,0,.7);
+}
+
+.ghost .text-navbar a{
+	line-height: 48px;
+	min-height: 48px;
+	background: #333;
+	color: #eee;
+}
+
+.ghost .text-navbar a:hover,
+	.ghost .text-navbar a:focus {
+	background: #444;
+	text-shadow: 0 0 15px #fff;
+}
+
+.ghost .text-navbar a:active {
+	color: #bbb;
+	text-shadow: 0 0 0 #fff;
+}
+
+.ghost .text-navbar .active a,
+.ghost .text-navbar .active a:hover,
+	.ghost .text-navbar .active a:focus {
+	background: #f33333;
+}
+
+.leftnavcont {
+	padding: 63px 0 0 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+}
+
+.ghost .workplace {
+	padding: 15px 0 15px 15px;
+	margin: 0 0 0 270px;
+}
+
+.ghost .sect-header-first {
+	padding: 50px 50px 0 0;
+	margin: 15px 0 100px 0;
+}
+
+.ghost .sect-header {
+	margin: 15px 0 15px 0;
+	padding: 30px 50px 0 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+.ghost .sect-header h1 {
+	margin: 15px 0;
+}
+
+.ghost .example {
+	padding: 0 100px 0 50px;
+	margin: 25px 0;
+	border-radius: 2px 0 0 2px;
+}
+
+@media (min-width: 1800px) and (max-width: 500000000px) {
+
+	.ghost h2,
+	.ghost h3,
+	.ghost p,
+	.ghost .note{
+		margin-right: 140px;
+	}
+
+	.ghost h2{
+		padding-top: 40px;
+	}
+
+	.ghost pre{
+		border-radius: 3px 0 0 3px;
+	}
+
+	.ghost .workplace{
+		padding: 20px 0;
+		margin: 0 0 0 335px;
+	}
+
+	.ghost .text-navbar{
+		margin-top: 20px; 
+	}
+
+	.ghost .text-navbar a{
+		line-height: 68px; 
+	}
+
+	.sect-header-first{
+		padding: 70px 140px 0 0;
+		margin: 20px 0 100px 0;
+	}
+
+	.sect-header{
+		margin: 20px 0;
+		padding: 40px 140px 0 0;
+		border-bottom: 1px dotted #ccc;
+	}
+
+	.sect-header h1{
+		margin: 20px 0;
+	}
+
+	.example{
+		padding: 0 100px 0 60px;
+		margin: 30px 0;
+	}
+
+}
