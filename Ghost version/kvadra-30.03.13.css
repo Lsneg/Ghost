@@ -1,0 +1,1306 @@
+
+/* __________KvadraCore__________ */
+
+.kvadra {
+	font-size: 13px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* __________KvadraCore__________ */
+
+.kvadra .t-norm {
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.kvadra table.v-top td {
+	vertical-align: top;
+}
+
+.kvadra .users-table td {
+	width: 50%;
+}
+
+.kvadra .users-table input {
+	width: 100%;
+}
+
+.kvadra .block.main {
+	width: 450px;
+}
+
+.kvadra .block.aside {
+	overflow: hidden;
+	float: none;
+	padding: 0 15px 0 30px;
+}
+
+.kvadra .block.aside ul {
+	list-style: none;
+}
+
+.kvadra .block.aside ul li {
+	margin: 10px 0;
+}
+
+.kvadra .block.aside ul.markers li:before {
+	content: '!';
+	color: orange;
+	margin-left: -15px;
+	position: absolute;
+	font-weight: bold;
+}
+
+.kvadra .block.aside .note {
+	padding: 20px 20px 20px 40px;
+	border: 1px solid #f7f7f7;
+}
+
+.kvadra .note {
+	padding: 7px 15px;
+}
+
+.kvadra input,
+.kvadra select,
+.kvadra textarea,
+.kvadra button,
+.kvadra a.button {
+	font-size: 13px;
+}
+
+.kvadra textarea {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 18px;
+}
+
+.kvadra textarea.normal {
+	min-width: 450px;
+	min-height: 200px;
+	height: 100px;
+	margin: 0 0 15px 0;
+}
+
+.kvadra .leftnav button,
+.kvadra .leftnav input,
+.kvadra .leftnav a.button,
+.kvadra .leftnav input[type="submit"] {
+	margin: 15px 0 5px 0;
+}
+
+.kvadra .inp-title {
+	width: 40%;
+	min-width: 200px;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+/* _Filter_ */
+
+.block-group.filter {
+	padding: 0 15px 15px 15px;
+}
+
+/* ^Filter^ */
+
+.kvadra h1.title {
+	font-size: 150%;
+	font-weight: 300;
+	margin: 5px 0 20px 0;
+	line-height: 1;
+}
+
+.kvadra h2.title {
+	font-size: 130%;
+	font-weight: 300;
+	margin: 5px 0 10px 0;
+	line-height: 1;
+}
+
+.kvadra .header {
+	min-width: 710px;
+	z-index: 9999;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.kvadra-vending .kvadra .header {
+	min-width: 830px;
+}
+
+/* Прокрутка внутри блока */
+.workplace {
+	float: left;
+	position: absolute;
+	overflow: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	-webkit-transition: margin 0.2s;
+	-moz-transition: margin 0.2s;
+	-o-transition: margin 0.2s;
+	transition: margin 0.2s;
+}
+
+.kvadra .table-group {
+	padding: 0;
+	-webkit-transition: padding 0.2s;
+	-moz-transition: padding 0.2s;
+	-o-transition: padding 0.2s;
+	transition: padding 0.2s;
+}
+
+	.kvadra .table-group.wide {
+		padding: 0 30px 15px 30px;
+	}
+
+.kvadra .workplace {
+	padding: 15px;
+	margin: 0 0 0 270px;
+}
+
+	.kvadra .workplace.wide {
+		margin: 0;
+		padding: 15px 0;
+	}
+
+.kvadra .navbar {
+	min-width: 375px;
+	margin: 15px -150px 0 30px;
+	z-index: 999;
+}
+
+.kvadra-vending .kvadra .navbar {
+	min-width: 450px;
+}
+
+.kvadra .navbar a {
+	background-image: url(../../images/icon-kvadra.png);
+	background-repeat: no-repeat;
+	background-color: #333;
+}
+
+.kvadra .navbar .item-1 a {
+	background-position: -88px -201px;
+}
+
+.kvadra .navbar .item-2 a {
+	background-position: -88px -301px;
+}
+
+.kvadra .navbar .item-3 a {
+	background-position: -88px -401px;
+}
+
+.kvadra .navbar .item-4 a {
+	background-position: -88px -501px;
+}
+
+.kvadra .navbar .item-5 a {
+	background-position: -88px -601px;
+}
+
+.kvadra .navbar .item-6 a {
+	background-position: -88px -901px;
+}
+
+.kvadra-vending .kvadra .navbar .item-1 a {
+	background-position: -88px -301px;
+}
+
+.kvadra-vending .kvadra .navbar .item-2 a {
+	background-position: -88px -201px;
+}
+
+.kvadra-vending .kvadra .navbar .item-3 a {
+	background-position: -88px -901px;
+}
+
+.kvadra-vending .kvadra .navbar .item-4 a {
+	background-position: -88px -401px;
+}
+
+.kvadra-vending .kvadra .navbar .item-5 a {
+	background-position: -88px -501px;
+}
+
+.kvadra-vending .kvadra .navbar .item-6 a {
+	background-position: -88px -601px;
+}
+
+
+.kvadra .text-navbar {
+	margin: 0 0 15px 0;
+	background: #fff;
+	border-radius: 0;
+	padding: 0;
+	background: #F4F7F7;
+	box-shadow: inset 0 0 0 1px rgba(220,220,220,0);
+	clear: both;
+	overflow: hidden;
+}
+
+.kvadra .text-navbar a {
+	display: block;
+	float: left;
+	color: #333;
+	width: 150px;
+	padding: 0 10px;
+	line-height: 32px;
+	min-height: 32px;
+	border: 0;
+	-webkit-transition: ALL 0.2s;
+	-moz-transition: ALL 0.2s;
+	-o-transition: ALL 0.2s;
+	transition: ALL 0.2s;
+}
+
+.kvadra .text-navbar a:hover {
+	color: #00b5b5;
+	box-shadow: inset 0 -1px 0 #00b5b5;
+}
+
+	.kvadra .text-navbar.inline a {
+		width: auto;
+	}
+
+.kvadra .switch {
+	margin: 15px 0 0 30px;
+	-webkit-transition: margin 0.2s;
+	-moz-transition: margin 0.2s;
+	-o-transition: margin 0.2s;
+	transition: margin 0.2s;
+}
+
+.kvadra .switch .title {
+	width: 97px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 45px;
+	min-height: 45px;
+	margin: 3px 0 0 -22px;
+}
+
+	.kvadra .switch.system-2 .item-2 .title{
+		margin: 3px -22px 0 0;
+	}
+
+.kvadra .switch .icon{
+	width: 74px;
+	height: 48px;
+}
+
+.kvadra .switch .active a:hover,
+	.kvadra .switch .active a:focus {
+	box-shadow: inset 0 36px 20px 10px #333;
+}
+
+/*одна система*/
+.kvadra .switch.system-1 {
+	margin-right: 74px;
+}
+
+	.kvadra .switch.system-1 .item-1.active a {
+		border-radius: 2px;
+	}
+
+	.kvadra .switch.system-1 .item-2,
+	.kvadra .switch.system-1 .item-3 {
+		display: none;
+	}
+
+/*две системы*/
+
+.kvadra .switch.system-2 .item-1 a {
+	border-radius: 2px 0 0 2px;
+	border-right: 0;
+}
+
+.kvadra .switch.system-2 .item-2 a {
+	border-radius: 0 2px 2px 0;
+	border-left: 0;
+}
+
+.kvadra .switch.system-2 .item-3 {
+	display: none;
+}
+
+
+/*три системы*/
+
+.kvadra .switch.system-3 .item-1 a {
+	border-radius: 2px 0 0 2px;
+	border-right: 0;
+}
+
+.kvadra .switch.system-3 .item-2 a {
+	border-radius: 0;
+	border-right: 0;
+	border-left: 0;
+	padding-right: 1px;
+}
+
+.kvadra .switch.system-3 .item-3 a {
+	border-radius: 0 2px 2px 0;
+	border-left: 0;
+}
+
+/* tultips */
+.kvadra .switch .tultip {
+	min-width: 58px;
+	margin-left: 0;
+	margin-top: 49px;
+}
+
+.kvadra .switch a:hover .tultip,
+	.kvadra .switch a:focus .tultip,
+.kvadra .switch.system-3 .active .tultip,
+.kvadra .switch.system-3 .active:hover .tultip,
+	.kvadra .switch.system-3 .active:focus .tultip {
+	display: block;
+}
+
+.kvadra .switch .active a:hover .tultip,
+	.kvadra .switch .active a:focus .tultip {
+	display: none;
+}
+
+.kvadra .switch.system-3 .title,
+.kvadra .switch.system-2 .title,
+.kvadra .switch.system-1 .title {
+	display: none;
+}
+
+.kvadra .switch .active .title {
+	display: block;
+}
+
+
+.kvadra .switch .cms a:hover,
+	.kvadra .switch .cms a:focus {
+	border-color: #00b5b5;
+	background: #00b5b5;
+}
+
+.kvadra .switch .cms a:active {
+	border-color: #0ccccc;
+	background-color: #0ccccc;
+}
+
+.kvadra .switch .cms a .icon {
+	background: url(../../images/icon-kvadra.png) no-repeat 12px -1px;
+}
+
+.kvadra .switch .cms a:hover .icon,
+	.kvadra .switch .cms a:focus .icon,
+.kvadra .switch .cms.active a .icon {
+	background: url(../../images/icon-kvadra.png) no-repeat -88px -1px;
+}
+
+.kvadra .switch .market a:hover,
+	.kvadra .switch .market a:focus {
+	border-color: #e93;
+	background: #e93;
+}
+
+.kvadra .switch .market a:active {
+	border-color: #fa3;
+	background-color: #fa3;
+}
+
+.kvadra .switch .market a .icon{
+	background: url(../../images/icon-kvadra.png) no-repeat 12px -101px;
+}
+
+.kvadra .switch .market a:hover .icon,
+	.kvadra .switch .market a:focus .icon,
+.kvadra .switch .market.active a .icon {
+	background: url(../../images/icon-kvadra.png) no-repeat -88px -101px;
+}
+
+
+.kvadra .switch .vending a:hover,
+	.kvadra .switch .vending a:focus {
+	border-color: #5cc55c;
+	background: #5cc55c;
+}
+
+.kvadra .switch .vending a:active{
+	border-color: #5ee55e;
+	background-color: #5ee55e;
+}
+
+.kvadra .switch .vending a .icon {
+	background: url(../../images/icon-kvadra.png) no-repeat 12px -801px;
+}
+
+.kvadra .switch .vending a:hover .icon,
+	.kvadra .switch .vending a:focus .icon,
+.kvadra .switch .vending.active a .icon {
+	background: url(../../images/icon-kvadra.png) no-repeat -88px -801px;
+}
+
+.kvadra .switch .item-1.active a:hover,
+	.kvadra .switch .item-1.active a:focus,
+.kvadra .switch .item-2.active a:hover,
+	.kvadra .switch .item-2.active a:focus,
+.kvadra .switch .item-3.active a:hover,
+	.kvadra .switch .item-3.active a:focus {
+	border-color: #2a2a2a;
+}
+
+.kvadra-cms .kvadra .navbar>div.active a,
+.kvadra-cms .kvadra .navbar>div.active a:hover,
+	.kvadra-cms .kvadra .navbar>div.active a:focus {
+	background-color: #00b5b5;
+	box-shadow: 0 0 0 #fff;
+	border-color: #00b5b5;
+}
+
+.kvadra-market .kvadra .navbar>div.active a,
+.kvadra-market .kvadra .navbar>div.active a:hover,
+	.kvadra-market .kvadra .navbar>div.active a:focus {
+	background-color: #ee9933;
+	box-shadow: 0 0 0 #fff;
+	border-color: #ee9933;
+}
+
+.kvadra-vending .kvadra .navbar>div.active a,
+.kvadra-vending .kvadra .navbar>div.active a:hover,
+	.kvadra-vending .kvadra .navbar>div.active a:focus {
+	background-color: #5cc55c;
+	box-shadow: 0 0 0 #fff;
+	border-color: #5cc55c;
+}
+
+.kvadra .box {
+	margin-top: 81px;
+}
+
+.kvadra-cms .leftnav li.active a {
+	color: #00b5b5;
+}
+
+.kvadra-market .leftnav li.active a {
+	color: #ee9933;
+}
+
+.kvadra-vending .leftnav li.active a {
+	color: #5cc55c;
+}
+
+/* _profile_ */
+
+.kvadra .profile {
+	position: relative;
+	float: right;
+	right: 0;
+	margin: 15px 30px 0 -100px;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #777;
+	z-index: 999;
+	-webkit-transition: box-shadow 0.2s, background-color 0.2s, margin 0.2s;
+	-moz-transition: box-shadow 0.2s, background-color 0.2s, margin 0.2s;
+	-o-transition: box-shadow 0.2s, background-color 0.2s, margin 0.2s;
+	transition: box-shadow 0.2s, background-color 0.2s, margin 0.2s;
+}
+
+.kvadra .profile:hover {
+	color: #333;
+}
+
+.kvadra .profile .logo {
+	z-index: 999;
+	position: relative;
+	float: right;
+	width: 48px;
+	height: 48px;
+	margin: 0;
+	background: url(../../images/4pr-user-logo.png) no-repeat 50% 50%;
+	border: 1px solid #eaeaea;
+	border-radius: 2px;
+}
+
+.kvadra .profile:hover .logo {
+	border: 1px solid #ccc;
+}
+
+.kvadra .profile.active .logo {
+	border: 1px solid #ccc;
+	box-shadow: inset 0 2px 1px #e4e4e4;
+}
+
+.kvadra .profile .user {
+	z-index: 888;
+	float: right;
+	max-width: 300px;
+	padding: 5px 10px 0 5px;
+	line-height: 45px;
+	min-height: 45px;
+	-webkit-transition: box-shadow 0.2s, border-color 0.2s;
+	-moz-transition: box-shadow 0.2s, border-color 0.2s;
+	-o-transition: box-shadow 0.2s, border-color 0.2s;
+	transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.kvadra .profile .user .name {
+	float: left;
+	font-size: 110%;
+	padding: 0 10px;
+}
+
+.kvadra .profile .user .account {
+	float: left;
+	font-family: arial, sans-serif;
+	font-size: 160%;
+}
+
+.kvadra .profile .popup {
+	display: none;
+	z-index: 999;
+	position: absolute;
+	min-width: 200px;
+	right: 0;
+	margin-top: 65px;
+	padding-bottom: 10px;
+	background-color: #fff;
+	box-shadow: 0 15px 20px -6px #dfdfdf;
+	border: 1px solid #eaeaea;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.kvadra .profile .popup a {
+	width: auto;
+	height: auto;
+	color: #777;
+	border-bottom: 1px solid #ddd;
+	clear: both;
+}
+
+.kvadra .profile .popup a:hover,
+	.kvadra .profile .popup a:focus {
+	color: #000;
+	border-bottom: 1px solid #333;
+}
+
+.kvadra .profile .popup ul {
+	list-style: none;
+	margin: 0;
+	padding: 10px 15px;
+	clear: both;
+	border-bottom: 1px dotted #eee;
+}
+
+.kvadra .profile .popup span {
+	display: block;
+	padding: 10px 23px;
+}
+
+.kvadra .profile .popup span.sites {
+	display: block;
+	padding: 10px 23px;
+}
+
+.kvadra .profile .popup span.sites a:hover,
+	.kvadra .profile .popup span.sites a:focus {
+	color: #00b5b5;
+	border-bottom: 1px solid #0ccccc;
+}
+
+.kvadra .profile .popup span.logout a:hover,
+	.kvadra .profile .popup span.logout a:hover {
+	color: #f33333;
+	border-bottom: 1px solid #f33333;
+}
+
+.kvadra .profile .popup li{
+	position: relative;
+	display: block;
+	clear: both;
+	float: left;
+	padding: 6px 10px;
+}
+
+/* ^profile^ */
+
+/* ^^^^^^^^^^ KvadraCore ^^^^^^^^^^ */
+
+/* _________LogIn page__________ */
+
+.login-page .login {
+	display: block;
+	float: left;
+	width: 220px;
+	margin: 10px 0 80px 0;
+}
+
+.login input,
+.login button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.login label {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.login-page .teazer-box{
+	float: left;
+	margin: 0;
+	width: 580px;
+}
+
+.login-page .teazer {
+	float: left;
+	width: 96px;
+	margin: 20px;
+	height: 96px;
+	background: #ccc;
+	border-radius: 2px;
+}
+
+.login-page .teazer-box .teazer.cms {
+	margin-left: 0;
+	background: #00b5b5 url(../../images/icon-kvadra.png) no-repeat -277px 22px;
+}
+
+.login-page .teazer-box .teazer.market {
+	background: #e93 url(../../images/icon-kvadra.png) no-repeat -277px -75px;
+}
+
+.login-page .teazer-box .teazer.vending {
+	background: #5cc55c url(../../images/icon-kvadra.png) no-repeat -277px -775px;
+}
+
+.login-page .center-box{
+	margin: 10% auto 0;
+	width: 801px;
+	padding: 20px 75px;
+}
+
+.login-page .logo {
+	width: 50px;
+	height: 50px;
+	margin-left: -65px;
+	float: left;
+	background: url(../../images/4pr-user-logo.png) no-repeat 50% 50%;
+}
+
+.login-page .copy {
+	line-height: 25px;
+	min-height: 25px;
+	color: #777;
+	float: left;
+}
+
+.login-page .f-right {
+	float: right;
+}
+
+/* ^^^^^^^^^^LogIn page^^^^^^^^^^ */
+
+
+/* __________ GHOST page __________ */
+
+.ghost h2,
+.ghost h3,
+.ghost p,
+.ghost .note{
+	margin-right: 100px;
+}
+
+.ghost h2{
+	padding-top: 30px;
+}
+
+.ghost pre{
+	border-radius: 2px 0 0 2px;
+}
+
+.ghost .text-navbar{
+	margin-top: 15px; 
+	margin-left: 30px; 
+	clear: both;
+	background: transparent;
+	box-shadow: inset 0 0 1px rgba(0,0,0,.7);
+}
+
+.ghost .text-navbar a{
+	line-height: 48px;
+	min-height: 48px;
+	background: #333;
+	color: #eee;
+}
+
+.ghost .text-navbar a:hover,
+	.ghost .text-navbar a:focus {
+	background: #444;
+	text-shadow: 0 0 15px #fff;
+}
+
+.ghost .text-navbar a:active {
+	color: #bbb;
+	text-shadow: 0 0 0 #fff;
+}
+
+.ghost .text-navbar .active a,
+.ghost .text-navbar .active a:hover,
+	.ghost .text-navbar .active a:focus {
+	background: #f33333;
+}
+
+.ghost div.leftnav.top {
+	border-top: 0;
+}
+
+.ghost div.leftnav.top a {
+	background-color: #333;
+	color: #fff;
+	font-size: 100%;
+	line-height: 22px;
+	min-height: 22px;
+	padding: 6px 15px 4px;
+	border-radius: 2px;
+}
+
+.ghost menu.leftnav li.active a {
+	color: #f33333;
+}
+
+.ghost .workplace {
+	padding: 15px 0 15px 15px;
+	margin: 0 0 0 270px;
+}
+
+.ghost .sect-header-first {
+	padding: 50px 50px 0 0;
+	margin: 15px 0 100px 0;
+}
+
+.ghost .sect-header {
+	margin: 15px 0 15px 0;
+	padding: 30px 50px 0 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+.ghost .sect-header h1 {
+	margin: 15px 0;
+}
+
+.ghost .example {
+	padding: 0 100px 0 50px;
+	margin: 25px 0;
+	border-radius: 2px 0 0 2px;
+}
+
+/* ^^^^^^^^^^ GHOST page ^^^^^^^^^^ */
+
+
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 500000000px) {
+
+	/* _Filter_ */
+
+	.block-group.filter {
+		padding: 0 20px 20px 20px;
+	}
+
+	/* ^Filter^ */
+
+	.workplace-relative {
+		padding: 20px 0;
+	}
+
+	.kvadra {
+		font-size: 16px;
+		font-family: Verdana, Geneva, sans-serif;
+		line-height: 22px;
+	}
+
+	.kvadra input,
+	.kvadra select,
+	.kvadra textarea,
+	.kvadra button,
+	.kvadra a.button {
+		font-size: 16px;
+	}
+
+	.kvadra textarea {
+	    font-family: Verdana, Geneva, sans-serif;
+	    line-height: 20px;
+	}
+
+	.kvadra textarea.normal {
+		min-width: 485px;
+		min-height: 200px;
+		margin: 0 0 15px 0;
+	}
+
+	.kvadra .leftnav button,
+	.kvadra .leftnav input,
+	.kvadra .leftnav a.button,
+	.kvadra .leftnav input[type="submit"] {
+		margin: 30px 0 15px 0;
+	}
+
+	.kvadra table.nopad,
+	.kvadra table.zebra {
+		min-width: 500px;
+	}
+
+	.kvadra table.nopad tr th:first-child,
+	.kvadra table.nopad tr td:first-child {
+		padding: 0;
+		padding-right: 10px;
+		min-width: 200px;
+	}
+
+	.kvadra aside {
+		padding: 0 35px;
+	}
+
+		.kvadra aside.opt {
+			min-width: 500px;
+		}
+
+	.kvadra aside ul li {
+		margin: 15px 0;
+	}
+
+	.kvadra .workplace {
+		padding: 20px;
+		margin: 0 0 0 350px;
+	}
+
+	.kvadra .workplace.wide {
+		padding: 20px 0;
+	}
+
+	.kvadra .table-group.wide {
+		padding: 0 40px 20px 40px;
+	}
+
+	.kvadra .switch {
+		margin: 20px 0 0 40px;
+	}
+
+	.kvadra .switch .title { 
+		width: 124px;
+		text-align: center;
+		line-height: 60px;
+		min-height: 60px;
+		margin: 4px 0 0 -24px;
+	}
+
+	.kvadra .switch .tultip {
+		margin-left: 0;
+		min-width: 84px;
+		margin-top: 66px;
+		padding-top: 6px;
+	}
+
+	.kvadra .switch .icon {
+		width: 98px;
+		height: 64px;
+	}
+
+	.kvadra .switch .active a:hover,
+		.kvadra .switch .active a:focus {
+		box-shadow: inset 0 48px 30px 16px #333;
+	}
+
+	/*одна система*/
+
+	.kvadra .switch.system-1{
+		margin-right: 98px;
+	}
+
+		.kvadra .switch.system-1 .item-1.active a{
+			border-radius: 3px;
+		}
+
+	/*две системы*/
+
+	.kvadra .switch.system-2 .item-1 a{
+		border-radius: 3px 0 0 3px;
+		border-right: 0;
+	}
+
+	.kvadra .switch.system-2 .item-2 a{
+		border-radius: 0 3px 3px 0;
+		border-left: 0;
+	}
+
+	.kvadra .switch.system-2 .item-2 .title{
+		margin: 3px -16px 0 4px;
+	}
+
+	/*три системы*/
+	.kvadra .switch.system-3{
+		margin-right: 0;
+	}
+
+	.kvadra .switch.system-3 .item-1 a{
+		border-radius: 3px 0 0 3px;
+		border-right: 0;
+	}
+
+	.kvadra .switch.system-3 .item-2 a{
+		border-radius: 0;
+		border-right: 0;
+		border-left: 0;
+		padding-right: 2px;
+	}
+
+	.kvadra .switch.system-3 .item-3 a{
+		border-radius: 0 3px 3px 0;
+		border-left: 0;
+	}
+
+
+	/*CMS*/
+	.kvadra .switch .cms a .icon{
+		background: url(../../images/icon-kvadra.png) no-repeat -177px 6px;
+	}
+
+	.kvadra .switch .cms a:hover .icon,
+		.kvadra .switch .cms a:focus .icon,
+	.kvadra .switch .cms.active a .icon {
+		background: url(../../images/icon-kvadra.png) no-repeat  -277px 6px;
+	}
+
+	/*Market*/
+	.kvadra .switch .market a .icon{
+		background: url(../../images/icon-kvadra.png) no-repeat -177px -93px;
+	}
+
+	.kvadra .switch .market a:hover .icon,
+		.kvadra .switch .market a:focus .icon,
+	.kvadra .switch .market.active a .icon {
+		background: url(../../images/icon-kvadra.png) no-repeat -277px -93px;
+	}
+
+	/*Vending*/
+	.kvadra .switch .vending a .icon {
+		background: url(../../images/icon-kvadra.png) no-repeat -177px -793px;
+	}
+
+	.kvadra .switch .vending a:hover .icon,
+		.kvadra .switch .vending a:focus .icon,
+	.kvadra .switch .vending.active a .icon {
+		background: url(../../images/icon-kvadra.png) no-repeat -277px -793px;
+	}
+
+
+
+	.kvadra .header{
+		padding-bottom: 20px;
+		border-bottom: 2px solid #f5f5f5;
+	}
+
+	.kvadra-cms .box,
+	.kvadra-market .box,
+	.kvadra-vending .box {
+		margin-top: 111px;
+	}
+
+	.kvadra .navbar{
+		min-width: 675px;
+		margin: 20px 0 0 30px;
+	}
+
+	.kvadra .navbar a{
+		background-image: url(../../images/icon-kvadra.png);
+		background-repeat: no-repeat;
+		background-color: #333;
+	}
+
+	.kvadra .navbar .item-1 a{
+		background-position: -277px -193px;
+	}
+
+	.kvadra .navbar .item-2 a{
+		background-position: -277px -293px;
+	}
+
+	.kvadra .navbar .item-3 a{
+		background-position: -277px -393px;
+	}
+
+	.kvadra .navbar .item-4 a{
+		background-position: -277px -493px;
+	}
+
+	.kvadra .navbar .item-5 a{
+		background-position: -277px -593px;
+	}
+
+
+	.kvadra-vending .kvadra .navbar .item-1 a{
+		background-position: -277px -293px;
+	}
+
+	.kvadra-vending .kvadra .navbar .item-2 a{
+		background-position: -277px -193px;
+	}
+
+	.kvadra-vending .kvadra .navbar .item-3 a{
+		background-position: -277px -893px;
+	}
+
+	.kvadra-vending .kvadra .navbar .item-4 a{
+		background-position: -277px -393px;
+	}
+
+	.kvadra-vending .kvadra .navbar .item-5 a{
+		background-position: -277px -493px;
+	}
+
+	.kvadra-vending .kvadra .navbar .item-6 a{
+		background-position: -277px -593px;
+	}
+
+	/*profile*/
+	
+	.kvadra .profile{
+		margin: 20px 40px 0 -200px;
+		border-radius: 3px;
+	}
+
+	.kvadra .profile .logo{
+		width: 64px;
+		height: 64px;
+		border: 2px solid #eaeaea;
+		border-radius: 3px;
+	}
+
+	.kvadra .profile:hover .logo{
+		border: 2px solid #ccc;
+	}
+
+	.kvadra .profile.active .logo{
+		border: 2px solid #ccc;
+		box-shadow: inset 0 3px 0px #ddd;
+	}
+
+	.kvadra .profile .user{
+		max-width: 400px;
+		padding: 5px 15px 0 10px;
+		line-height: 63px;
+		min-height: 63px;
+	}
+
+	.kvadra .profile .popup{
+		min-width: 230px;
+		margin-top: 88px;
+		padding-bottom: 10px;
+		background-color: #fff;
+		box-shadow: 0 15px 20px -6px #dfdfdf;
+		border: 2px solid #eaeaea;
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #ddd;
+	}
+
+	.kvadra .profile .popup ul{
+		list-style: none;
+		margin: 0;
+		padding: 10px 20px;
+		clear: both;
+		border-bottom: 1px dotted #eee;
+	}
+
+	.kvadra .profile .popup span,
+	.kvadra .profile .popup span.sites {
+		display: block;
+		padding: 10px 30px;
+	}
+
+	.kvadra .profile .popup li{
+		position: relative;
+		display: block;
+		clear: both;
+		float: left;
+		padding: 6px 10px;
+	}
+
+	/*profile -end*/
+
+	/* ^^^^^^^^^^ KvadraCore ^^^^^^^^^^ */
+
+	/*GHOST page*/
+
+	.ghost h2,
+	.ghost h3,
+	.ghost p,
+	.ghost .note{
+		margin-right: 140px;
+	}
+
+	.ghost h2{
+		padding-top: 40px;
+	}
+
+	.ghost pre{
+		border-radius: 3px 0 0 3px;
+	}
+
+	.ghost .workplace {
+		padding: 20px 0;
+		margin: 0 0 0 335px;
+	}
+
+	.ghost .text-navbar {
+		margin-top: 20px; 
+	}
+
+	.ghost .text-navbar a {
+		line-height: 68px; 
+		min-height: 68px; 
+	}
+
+	.sect-header-first {
+		padding: 70px 140px 0 0;
+		margin: 20px 0 100px 0;
+	}
+
+	.sect-header {
+		margin: 20px 0;
+		padding: 40px 140px 0 0;
+		border-bottom: 1px dotted #ccc;
+	}
+
+	.sect-header h1 {
+		margin: 20px 0;
+	}
+
+	.example {
+		padding: 0 100px 0 60px;
+		margin: 30px 0;
+	}
+
+	/*GHOST page - end*/
+
+
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+
+}
+
+@media only screen and (min-width: 1152px) and (max-width: 1279px) {
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1152px) {
+
+	.kvadra .profile .user .account{
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+
+	.kvadra .profile .user{
+		display: none;
+	}
+
+	.kvadra .profile:hover .logo{
+		background: url(../../images/d-arrow.png) no-repeat 50% 50%;
+		border-radius: 2px;
+		box-shadow: 0 0 4px #eaeaea;
+		border: 1px solid #eaeaea;
+	}
+
+	.kvadra .profile:hover{
+		box-shadow: 0 0 0 #fff;
+	}
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+
+	.kvadra .profile .user{
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+
+	.kvadra .switch {
+		margin: 15px 0 0 15px;
+	}
+
+	.kvadra .navbar {
+		margin: 15px 0 0 15px;
+	}
+
+	.kvadra-vending .kvadra .header {
+		min-width: 785px;
+	}
+
+	.kvadra .profile {
+		margin: 15px 15px 0 -100px;
+	}
+
+	.kvadra .profile .user {
+		display: none;
+	}
+
+	.kvadra .leftnav {
+		width: 225px;
+		margin: 0 15px;
+	}
+
+	.kvadra .workplace {
+		margin: 0 0 0 240px;
+	}
+	
+	.kvadra .table-group.wide {
+		padding: 0 15px;
+	}
+
+}
+
+@media only screen and (min-width: 10px) and (max-width: 700px) {
+
+	.kvadra .switch {
+		margin: 15px 0 0 15px;
+	}
+
+	.kvadra .navbar {
+		margin: 15px 0 0 15px;
+	}
+
+	.kvadra-vending .kvadra .header {
+		min-width: 785px;
+	}
+
+	.kvadra .profile {
+		margin: 15px 15px 0 -100px;
+	}
+
+	.kvadra .profile .user {
+		display: none;
+	}
+
+	.kvadra .leftnav {
+		width: 225px;
+		margin: 0 15px;
+	}
+
+	.kvadra .workplace {
+		margin: 0 0 0 240px;
+	}
+	
+	.kvadra .table-group.wide {
+		padding: 0 15px;
+	}
+}
+
