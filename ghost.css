@@ -502,7 +502,7 @@ input[type="submit"] {
 	border: 1px solid #222;
 	text-align: center;
 	vertical-align: middle;
-	border-radius: 2px;
+	border-radius: 1px;
 	color: #fff;
 	cursor: pointer;
 	-webkit-transition: border 0.2s, background-color 0.2s;
@@ -525,8 +525,7 @@ button:active,
 a.button:active,
 input[type="submit"]:active {
 	background-color: #555;
-	border-color: #222;
-	box-shadow: inset 0 2px 0 #444;
+	border-color: #000;
 }
 
 
@@ -558,8 +557,8 @@ a.button.gray:active,
 input[type="reset"]:active,
 input[type="submit"].gray:active {
 	background-color: #e6e6d9;
-	border-color: #ccc;
-	box-shadow: inset 0 2px 0 #ccc;
+	border-color: #888;
+	box-shadow: inset 0 0 0 #ccc;
 }
 
 /* Голубая кнопка. дополнительная кнопка для kvadraCMS */
@@ -585,8 +584,7 @@ input[type="submit"].blue:hover,
 button.blue:active,
 a.button.blue:active,
 input[type="submit"].blue:active {
-	border-color: #00b5b5;
-	box-shadow: inset 0 2px 0 #00b5b5;
+	border-color: #00a0a0;
 }
 
 
@@ -612,8 +610,14 @@ a.button.link:hover,
 button.link:active,
 a.button.link:active {
 	background-color: #e6e6d9;
-	border-color: #ccc;
-	box-shadow: inset 0 2px 0 #ccc;
+	border-color: #888;
+}
+
+/* Для того, что бы последная кнопка в линии других не слетала изза отступа */
+button:last-child,
+a.button:last-child,
+input[type="submit"].gray:last-child {
+	margin-right: 0;
 }
 
 /* Для того, что бы последная кнопка в линии других не слетала изза отступа */
@@ -639,7 +643,7 @@ input[type="submit"].gray:last-child {
 	width: 60px;
 	margin: 1px 0 0 0;
 	padding: 4px 0;
-	border-radius: 0 2px 2px 0;
+	border-radius: 0 1px 1px 0;
 }
 
 /* ^Формы^ */
