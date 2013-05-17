@@ -48,7 +48,7 @@ a:hover {
 
 a:hover,
 	a:focus {
-	color: #ee4444;
+	color: #e44;
 	border-bottom: 1px solid #eeaaaa;
 }
 
@@ -76,7 +76,7 @@ a.box-link span.pseudo-a {
 
 a.box-link:hover span.pseudo-a,
 	a.box-link:focus span.pseudo-a {
-	color: #ee4444;
+	color: #e44;
 	border-bottom: 1px dotted #ee9999;
 }
 
@@ -88,7 +88,7 @@ a.box-link:hover span.pseudo-a,
 
 .pseudo-a:hover,
 	.pseudo-a:focus {
-	color: #ee4444;
+	color: #e44;
 	border-bottom: 1px dotted #ee9999;
 }
 
@@ -99,14 +99,14 @@ a.box-link:hover span.pseudo-a,
 
 .box-pseudo-link:hover,
 	.box-pseudo-link:focus {
-	color: #ee4444;
+	color: #e44;
 }
 
 .box-pseudo-link:hover .dash,
 	.box-pseudo-link:focus .dash,
 .box-pseudo-link:hover .dot,
 	.box-pseudo-link:focus .dot {
-	border-bottom: 1px dotted #ee9999;
+	border-bottom: 1px dotted #e99;
 }
 
 .dash {
@@ -210,12 +210,11 @@ code {
     white-space: pre-wrap;
     word-wrap: break-word;
     clear: both;
-    overflow-x: auto; 
-	font-size: 14px;
+    overflow-x: auto;
+	font-size: 87%;
 	line-height: 20px;
-	background-color: #f4f4f0;
-	box-shadow: inset 50px 0 0 #e7e7e2;
-	border-radius: 2px;
+	background-color: #f8f8f2;
+	box-shadow: inset 50px 0 0 #f1f1e8;
 }
 
 code {
@@ -242,15 +241,15 @@ pre span {
 
 .doc,
 .atr {
-	color: #008866;
+	color: #6CA533;
 }
 
 .tag {
-	color: #0019b2;
+	color: #0aa;
 }
 
 .val {
-	color: #e33333;
+	color: #ee4444;
 }
 
 .example{
@@ -431,8 +430,8 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
 	display: inline-block;
-	line-height: 20px;
 	min-height: 20px;
+	line-height: 20px;
 	font-size: 15px;
 	padding: 4px 6px 4px 7px;
 	width: 200px;
@@ -445,7 +444,7 @@ input[type="color"] {
 	-webkit-transition: border 0.2s;
 	-moz-transition: border 0.2s;
 	-o-transition: border 0.2s;
-	transition: border 0.2s;	
+	transition: border 0.2s;
 }
 
 input[type="checkbox"],
@@ -462,7 +461,7 @@ label.checkbox {
 select:focus,
 textarea:focus,
 input:focus {
-	border-color: #999;
+	border-color: #555;
 }
 
 select {
@@ -630,15 +629,15 @@ input[type="submit"].gray:last-child {
 }
 
 .search input {
-	width: 136px;
-	margin: 0;
-	border-radius: 2px 0 0 2px;
+	width: 140px;
+	margin: 1px 0 0 0;
+	border-radius: 1px 0 0 1px;
 	border-right: 0;
 }
 
 .search button {
 	width: 60px;
-	margin: 0;
+	margin: 1px 0 0 0;
 	padding: 4px 0;
 	border-radius: 0 2px 2px 0;
 }
@@ -723,7 +722,7 @@ input[type="submit"].gray:last-child {
 
 /* _Tultips_ (на стадии разработки, js нужно написать) */
 
-.tultip{
+.tultip {
 	display: none;
 	position: absolute;
 	min-width: 100px;
@@ -750,7 +749,7 @@ input[type="submit"].gray:last-child {
 	margin: 10px 0;
 	background: transparent;
 	color: #666;
-	border-radius: 2px;
+	border-radius: 1px;
 	border: 1px solid #eee;
 }
 
