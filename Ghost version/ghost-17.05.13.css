@@ -804,12 +804,12 @@ input[type="submit"].gray:last-child {
 
 .table-group {
 	clear: both;
-	padding: 20px 45px 0 45px;
+	padding: 15px 45px 0 45px;
 }
 
 .block-group {
 	clear: both;
-	padding: 20px 45px 0 45px;
+	padding: 15px 30px 0 30px;
 	-webkit-transition: padding 0.2s;
 	-moz-transition: padding 0.2s;
 	-o-transition: padding 0.2s;
@@ -1121,8 +1121,8 @@ menu {
 }
 
 .site hr {
-	margin-left: 60px;
-	margin-right: 60px;
+	margin-left: 45px;
+	margin-right: 45px;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -1130,7 +1130,7 @@ menu {
 	margin-left: 20%;
 }
 
-.box {
+.box{
 	position: absolute;
 	float: left;
 	width: 100%;
@@ -1151,7 +1151,7 @@ menu {
 	text-align: center;
 }
 
-.slider-box div.item .description {
+.slider-box div.item .description{
 	position: absolute;
 	line-height: 22px;
 	min-height: 22px;
@@ -1166,16 +1166,16 @@ menu {
 
 /* _Switcher-tab_ */
 
-.switch {
+.switch{
 	float: left;
 	border-radius: 2px;
 }
 
-.switch a {
+.switch a{
 	display: block;
 }
 
-.switch div {
+.switch div{
 	float: left;
 }
 
@@ -1194,14 +1194,14 @@ menu {
 	background-color: #eaeaea;
 }
 
-.switch .icon {
+.switch .icon{
 	display: block;
 	float: left;
 	width: 50px;
 	height: 30px;
 }
 
-.switch .title {
+.switch .title{
 	z-index: 999;
 	display: block;
 	float: left;
@@ -1212,7 +1212,7 @@ menu {
 	cursor: pointer;
 }
 
-.switch .active {
+.switch .active{
 	z-index: 888;
 }
 
@@ -1260,7 +1260,7 @@ menu {
 	font-weight: 700;
 }
 
-.switcher-link>span:first-child {
+.switcher-link>span:first-child{
 	margin-top: 0;
 }
 
@@ -1416,7 +1416,7 @@ menu {
 .text-navbar {
 	z-index: 99999;
 	float: left;
-	margin: 35px 0 0 60px;
+	margin: 30px 0 0 45px;
 	background: #333;
 	border-radius: 2px;
 	padding: 0 0 10px 0;
@@ -1473,11 +1473,11 @@ menu {
 		height: 32px;
 	}
 
-	.text-navbar.inline div:first-child a {
+	.text-navbar.inline div:first-child a{
 		border-radius: 2px 0 0 2px;
 	}
 
-	.text-navbar.inline div:last-child a {
+	.text-navbar.inline div:last-child a{
 		border-radius: 0 2px 2px 0;
 	}
 
@@ -1486,7 +1486,7 @@ menu {
 	text-shadow: 0 0 15px #fff;
 }
 
-.text-navbar div a:active {
+.text-navbar div a:active{
 	color: #bbb;
 	text-shadow: 0 0 0 #fff;
 }
@@ -1754,7 +1754,7 @@ menu {
 }
 
 .social-box .social-line {
-	margin: 0 60px;
+	margin: 0 45px;
 	border-top: 1px solid #d8d8d8;
 }
 
@@ -2052,8 +2052,8 @@ small,
 @media (min-width: 1800px) and (max-width: 100500px) {
 
 	body {
-		font-size: 17px;
-		line-height: 24px;
+		font-size: 16px;
+		line-height: 22px;
 	}
 
 	.adapt .w20{
@@ -2156,7 +2156,7 @@ small,
 	}
 
 	.social-box .social-line {
-		margin: 0 130px;
+		margin: 0 100px;
 	}
 
 	hr {
@@ -2344,7 +2344,7 @@ small,
 
 	.block-group {
 		clear: both;
-		padding: 20px 100px 0 100px;
+		padding: 20px 70px 0 70px;
 	}
 
 	.block-group.plate {
@@ -2363,8 +2363,8 @@ small,
 	/*Grid -end*/
 
 	.site hr {
-		margin-left: 130px;
-		margin-right: 130px;
+		margin-left: 100px;
+		margin-right: 100px;
 	}
 
 	.footer {
@@ -2451,8 +2451,9 @@ small,
 			border-radius: 0 3px 3px 0;
 		}
 
+
 	.text-navbar {
-		margin: 35px 0 0 130px;
+		margin: 40px 0 0 100px;
 		border-radius: 3px;
 		padding: 0 0 12px 0;
 	}
@@ -2568,7 +2569,7 @@ small,
 
 }
 
-@media (min-width: 1366px) and (max-width: 1800px) {
+@media (min-width: 1366px) and (max-width: 1600px) {
 
 	.adapt .w25 {
 		width: 20%;
@@ -2598,33 +2599,6 @@ small,
 		clear: none;
 	}
 
-	.table-group {
-		clear: both;
-		padding: 20px 70px;
-	}
-
-	.block-group {
-		clear: both;
-		padding: 20px 70px 0 70px;
-	}
-
-	.plate {
-		padding-bottom: 20px;
-	}
-
-	.text-navbar {
-		margin: 45px 0 0 85px;
-	}
-
-	.site hr {
-		margin-left: 85px;
-		margin-right: 85px;
-	}
-
-	.social-box .social-line {
-		margin: 0 85px;
-	}
-
 }
 
 @media (min-width: 1152px) and (max-width: 1279px) {
@@ -2638,35 +2612,6 @@ small,
 @media (min-width: 1024px) and (max-width: 1152px) {
 
 	body {
-	}
-
-	.site hr {
-		margin-left: 30px;
-		margin-right: 30px;
-	}
-
-	/*Grid*/
-
-	.social-box .social-line {
-		margin: 0 30px;
-	}
-
-	.table-group {
-		clear: both;
-		padding: 20px 30px;
-	}
-
-	.block-group {
-		clear: both;
-		padding: 20px 15px 0 15px;
-	}
-
-	.block-group.plate {
-		padding-bottom: 20px;
-	}
-
-	.text-navbar {
-		margin: 35px 0 0 40px;
 	}
 
 }
@@ -2700,10 +2645,6 @@ small,
 
 	.block-group.plate {
 		padding-bottom: 15px;
-	}
-
-	.text-navbar{
-		margin: 30px 0 0 30px;
 	}
 
 	.adapt .w16 {
@@ -2763,6 +2704,10 @@ small,
 	}
 
 	/*Grid -end*/
+
+	.text-navbar{
+		margin: 30px 0 0 30px;
+	}
 
 }
 
