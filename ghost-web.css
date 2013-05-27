@@ -1,15 +1,15 @@
-.ghost h2,
-.ghost h3,
-.ghost p,
-.ghost .note{
+h2,
+h3,
+p,
+.note {
 	margin-right: 100px;
 }
 
-.ghost h2{
+h2 {
 	padding-top: 30px;
 }
 
-.ghost .text-navbar{
+.ghost .text-navbar {
 	margin-top: 15px; 
 	margin-left: 30px; 
 	clear: both;
@@ -18,7 +18,7 @@
 	box-shadow: inset 0 0 1px rgba(0,0,0,.7);
 }
 
-.ghost .text-navbar a{
+.ghost .text-navbar a {
 	line-height: 48px;
 	min-height: 48px;
 	background: #333;
@@ -50,27 +50,27 @@
 
 }
 
-.ghost .workplace {
+.workplace {
 	padding: 15px 0 15px 15px;
 	margin: 0 0 0 270px;
 }
 
-.ghost .sect-header-first {
+.sect-header-first {
 	padding: 50px 50px 0 0;
 	margin: 15px 0 100px 0;
 }
 
-.ghost .sect-header {
+.sect-header {
 	margin: 15px 0 15px 0;
 	padding: 30px 50px 0 0;
 	border-bottom: 1px dotted #ccc;
 }
 
-.ghost .sect-header h1 {
+.sect-header h1 {
 	margin: 15px 0;
 }
 
-.ghost .example {
+.example {
 	padding: 0 100px 0 50px;
 	margin: 25px 0;
 	border-radius: 2px 0 0 2px;
@@ -78,52 +78,131 @@
 
 @media (min-width: 1800px) and (max-width: 500000000px) {
 
-	.ghost h2,
-	.ghost h3,
-	.ghost p,
-	.ghost .note{
+	h2,
+	h3,
+	p,
+	.note {
 		margin-right: 140px;
 	}
 
-	.ghost h2{
+	h2 {
 		padding-top: 40px;
 	}
 
-	.ghost pre{
+	pre {
 		border-radius: 3px 0 0 3px;
 	}
 
-	.ghost .workplace{
+	.workplace {
 		padding: 20px 0;
 		margin: 0 0 0 335px;
 	}
 
-	.ghost .text-navbar{
+	.text-navbar {
 		margin-top: 20px; 
 	}
 
-	.ghost .text-navbar a{
+	.text-navbar a {
 		line-height: 68px; 
 	}
 
-	.sect-header-first{
+	.sect-header-first {
 		padding: 70px 140px 0 0;
 		margin: 20px 0 100px 0;
 	}
 
-	.sect-header{
+	.sect-header {
 		margin: 20px 0;
 		padding: 40px 140px 0 0;
 		border-bottom: 1px dotted #ccc;
 	}
 
-	.sect-header h1{
+	.sect-header h1 {
 		margin: 20px 0;
 	}
 
-	.example{
+	.example {
 		padding: 0 100px 0 60px;
 		margin: 30px 0;
 	}
+
+}
+
+
+@media (min-width: 1366px) and (max-width: 1800px) {
+
+}
+
+
+@media (min-width: 1152px) and (max-width: 1279px) {
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1152px) {
+
+}
+
+
+@media (min-width: 920px) and (max-width: 1024px) {
+
+}
+
+
+@media (min-width: 840px) and (max-width: 920px) {
+
+	.leftnav {
+		margin: 0 0 0 25px;
+		width: 230px;
+	}
+
+	.text-navbar.inline {
+		margin-left: 25px;
+	}
+
+	.workplace {
+		margin-left: 245px;
+	}
+
+}
+
+
+@media (min-width: 760px) and (max-width: 840px) {
+
+	.leftnav {
+		margin: 0 0 0 25px;
+		width: 230px;
+	}
+
+	.text-navbar.inline {
+		margin-left: 25px;
+	}
+
+	.workplace {
+		margin-left: 245px;
+	}
+
+}
+
+
+@media (max-width: 760px) {
+
+	.leftnav {
+		margin: 0 0 0 15px;
+		width: 220px;
+	}
+
+	.text-navbar.inline {
+		margin-left: 15px;
+	}
+
+	.workplace {
+		margin-left: 235px;
+	}
+
+}
+
+
+@media (max-width: 500px) {
 
 }
