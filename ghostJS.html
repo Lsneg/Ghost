@@ -1,18 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Ghost by 4pr2</title>
-	<link rel="stylesheet" type="text/css" href="ghost.css" media="all">
-	<link rel="stylesheet" type="text/css" href="ghost-web.css" media="all">
-	<link rel="shortcut icon" type="image/ico" href="imgages/favicon.ico">
-	<link rel="icon" href="imgages/favicon.ico" type="image/x-icon">
-	<style type="text/css">
-	</style>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
-	</script>
-	<script type="text/javascript">
-	</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>JS &bull; kvadraGhost by 4pr2</title>
+<link rel="stylesheet" href="style/ghost.css">
+<link rel="stylesheet" href="style/ghost-web.css">
+<style></style>
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>
+<script src="js/highlight.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+	hljs.tabReplace = '  ';
+$(document).ready(function() {
+  $('code').each(function(i, e) {hljs.highlightBlock(e)});
+});
+</script>
+
 </head>
 
 <body>
@@ -35,7 +41,7 @@
 			
 			<div>
 				<a href="ghostRuby.html">
-					<span class="title">Ruby</span>
+					<span class="title">ROR</span>
 				</a>
 			</div>
 
