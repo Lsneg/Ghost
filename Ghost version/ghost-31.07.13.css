@@ -1,3 +1,4 @@
+
 /* Ghost ставить в HTML самым первым из стилей! */
 
 /*_____________________BASE CSS________________________*/
@@ -198,8 +199,8 @@ code {
 
 pre code {
 	display: block;
-	font-size: 90%;
-	line-height: 1.5;
+	font-size: 100%;
+	line-height: 1.4;
 	padding: 15px 25px;
     white-space: pre;
     clear: both;
@@ -1141,16 +1142,16 @@ menu {
 
 /* _Switcher-tab_ */
 
-.switch {
+.switch{
 	float: left;
 	border-radius: 2px;
 }
 
-.switch a {
+.switch a{
 	display: block;
 }
 
-.switch div {
+.switch div{
 	float: left;
 }
 
@@ -1169,14 +1170,14 @@ menu {
 	background-color: #eaeaea;
 }
 
-.switch .icon {
+.switch .icon{
 	display: block;
 	float: left;
 	width: 50px;
 	height: 30px;
 }
 
-.switch .title {
+.switch .title{
 	z-index: 999;
 	display: block;
 	float: left;
@@ -1187,7 +1188,7 @@ menu {
 	cursor: pointer;
 }
 
-.switch .active {
+.switch .active{
 	z-index: 888;
 }
 
@@ -1209,24 +1210,23 @@ menu {
 	display: block;
 	float: left;
 	clear: both;
-	padding: .4em 1em .4em;
-	margin: 0 -1em 0 -1em;
-	border-radius: 10em;
+	padding: .3em .9em;
+	margin: 0 -.9em 0 -.9em;
+	border-radius: 1em;
 	line-height: 1.4;
 }
 
 .switcher-link>span.left {
-	padding: .3em .7em .3em 1em;
-	margin: 0 0 0 -1;
+	padding: .3em .7em .3em .9em;
+	margin: 0 0 0 -.9em;
 }
 
 .switcher-link>span.right {
-	padding: .3em .9em .3em 1em;
-	margin: 0 -1em 0 0;
+	padding: .3em .9em .3em .7em;
+	margin: 0 -9em 0 0;
 }
 
 .switcher-link>span.cube {
-	border-radius: 1px;
 	padding: .3em .7em;
 	margin: 0 0 0 -.7em;
 }
@@ -1334,6 +1334,64 @@ menu {
 .phone-code {
 	margin: 0 .33em 0 -2em;
 	color: #bbb;
+}
+
+.social-box {
+	width: 100%;
+	margin: 25px 0;
+	overflow: hidden;
+}
+
+.social-box .social-line {
+	margin: 0 60px;
+	border-top: 1px solid #d8d8d8;
+}
+
+.pluso {
+	left: 50%;
+	margin: -15px 0 0 -100px;
+	width: 175px;
+	text-align: center;
+}
+
+span.social {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 20px;
+	width: 135px;
+	float: left;
+	display: none;
+	margin: 0 10px 0 5px;
+	color: #999;
+}
+
+.pluso a {
+	border: 0;
+	float: left;
+	margin-right: 5px;
+}
+
+.pluso a.pluso-email {
+	margin: 0 5px 0 15px;
+}
+
+.pluso a.pluso-twitter,
+.pluso a.pluso-facebook,
+.pluso a.pluso-google,
+.pluso a.pluso-vkontakte {
+	margin: 0 5px 0 0;
+}
+
+.pluso a.pluso-vkontakte {
+	margin-right: 8px;
+}
+
+.pluso-small a {
+	margin-right: 15px;
+}
+
+.pluso .pluso-counter-container {
+	margin-left: 55px;
 }
 
 
@@ -1719,6 +1777,10 @@ p.hovered-p:hover {
 	h6 {
 		font-size: 15px;
 		line-height: 18px;
+	}
+
+	.social-box .social-line {
+		margin: 0 130px;
 	}
 
 	.table-group {

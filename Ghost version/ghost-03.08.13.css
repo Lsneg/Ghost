@@ -1336,6 +1336,64 @@ menu {
 	color: #bbb;
 }
 
+.social-box {
+	width: 100%;
+	margin: 25px 0;
+	overflow: hidden;
+}
+
+.social-box .social-line {
+	margin: 0 60px;
+	border-top: 1px solid #d8d8d8;
+}
+
+.pluso {
+	left: 50%;
+	margin: -15px 0 0 -100px;
+	width: 185px;
+	text-align: center;
+}
+
+span.social {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 20px;
+	width: 135px;
+	float: left;
+	display: none;
+	margin: 0 10px 0 5px;
+	color: #999;
+}
+
+.pluso a {
+	border: 0;
+	float: left;
+	margin-right: 5px;
+}
+
+.pluso a.pluso-email {
+	margin: 0 5px 0 15px;
+}
+
+.pluso a.pluso-twitter,
+.pluso a.pluso-facebook,
+.pluso a.pluso-google,
+.pluso a.pluso-vkontakte {
+	margin: 0 5px 0 0;
+}
+
+.pluso a.pluso-vkontakte {
+	margin-right: 8px;
+}
+
+.pluso-small a {
+	margin-right: 15px;
+}
+
+.pluso .pluso-counter-container {
+	margin-left: 55px;
+}
+
 
 .input-xs {
 	width: 30px !important;
@@ -1719,6 +1777,10 @@ p.hovered-p:hover {
 	h6 {
 		font-size: 15px;
 		line-height: 18px;
+	}
+
+	.social-box .social-line {
+		margin: 0 130px;
 	}
 
 	.table-group {

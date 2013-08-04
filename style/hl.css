@@ -1,0 +1,91 @@
+code,
+code .subst,
+code .clojure .built_in,
+code .nginx .title {
+  color: #333;
+}
+
+code .tag,
+code .rules {
+  color: #aaa;
+}
+
+code.css .tag,
+code .lisp .title,
+code .tag .title {
+  color: #e02865;
+}
+
+code .id,
+code .class,
+code .pseudo,
+code .tag .attribute {
+  color: #6b8200;
+}
+
+code .rule .attribute {
+  color: #7e639d;
+}
+
+code .string,
+code .title,
+code .constant,
+code .parent,
+code .tag .value,
+code .rules .value,
+code .rules .value .number,
+code .preprocessor,
+code .ruby .symbol,
+code .ruby .symbol .string,
+code .aggregate,
+code .template_tag,
+code .django .variable,
+code .smalltalk .class,
+code .addition,
+code .flow,
+code .stream,
+code .bash .variable,
+code .apache .tag,
+code .apache .cbracket,
+code .tex .command,
+code .tex .special,
+code .erlang_repl .function_or_atom,
+code .markdown .header {
+  color: #088;
+}
+
+code .comment,
+code .annotation,
+code .template_comment,
+code .diff .header,
+code .chunk,
+code .markdown .blockquote {
+  color: #888;
+}
+
+code .number,
+code .date,
+code .regexp,
+code .literal,
+code .smalltalk .symbol,
+code .smalltalk .char,
+code .go .constant,
+code .change,
+code .markdown .bullet,
+code .markdown .link_url {
+  color: #080;
+}
+
+code .label,
+code .javadoc,
+code .ruby .string,
+code .decorator,
+code .filter .argument,
+code .localvars,
+code .array,
+code .attr_selector,
+code .important,
+code .doctype, {
+  color: #88F;
+}
+
