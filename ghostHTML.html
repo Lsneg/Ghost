@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="style/ghost.css">
 <link rel="stylesheet" href="style/ghost-web.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/jquery.js"></script>
+<script src="js/jquery1_10_2.js.js"></script>
 <script src="js/highlight.js"></script>
 <script>
 hljs.initHighlightingOnLoad();
@@ -48,7 +48,7 @@ $(document).ready(function() {
 			<div class="leftnav">
 				<ul>
 					<li>
-						<a href="#workstart">Начало работы</a></li>
+						<a href="#workstart" id="testit">Начало работы</a></li>
 					<li>
 						<a href="#grid">Сетка</a></li>
 					<li class="sub-tree">
@@ -647,3 +647,19 @@ $(document).ready(function() {
 </div>	
 </body>
 </html>
+
+
+<script>
+	$(".leftnav li a").click(function() {
+		$(".leftnav li a").removeClass("active")
+  		$(this).addClass("active");
+	});
+</script>
+
+
+
+
+
+
+
+
