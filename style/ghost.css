@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 22px;
 	color: #333;
 	font-family: arial, helvetica, sans-serif;
@@ -376,6 +376,12 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
+input,
+button {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 14px;
+}
+
 select,
 textarea,
 input[type="text"],
@@ -395,7 +401,6 @@ input[type="color"] {
 	display: inline-block;
 	min-height: 20px;
 	line-height: 20px;
-	font-size: 15px;
 	padding: 4px 6px 4px 7px;
 	width: 220px;
 	margin: 5px 0;
@@ -472,7 +477,6 @@ input[type="submit"] {
 	display: inline-block;
 	padding: 5px 15px;
 	margin: 4px 6px 4px 0;
-	font-size: 15px;
 	line-height: 20px;
 	min-height: 20px;
 	background: #333;
@@ -686,7 +690,7 @@ input[type="submit"].gray:last-child {
 .search button {
 	width: 60px;
 	margin: 1px 0 0 0;
-	padding: 4px 0;
+	padding: 5px 0;
 	border-radius: 0 1px 1px 0;
 }
 
@@ -780,52 +784,43 @@ input[type="submit"].gray:last-child {
 	line-height: 20px;
 	min-height: 20px;
 	padding: 10px 20px;
-	margin: 10px 0;
+	margin: 0 0 15px 0;
 	background: transparent;
 	color: #666;
 	border-radius: 1px;
-	border: 1px solid #eee;
 }
 
-.note pre,
-.note code {
-	background: rgba(0,0,0,.05);
-	box-shadow: 0 -2px 0 rgba(0,0,0,.05);
+span.note {
+	display: inline-block;
 }
 
 .note.gray {
 	background: #f7f7f7;
 	color: #555;
-	border-color: #e7e7e7;
 }
 
 .note.info {
 	background: #EEF4FF;
 	color: #6681AA;
-	border-color: #EEF4FF;
 }
 
 .note.ok {
 	background: #e1ffdb;
 	color: #59894a;
-	border-color: #b8ffa8;
 }
 
 .note.warning {
 	background: #FDFFC1;
 	color: #CC8400;
-	border-color: #FDFFC1;
 }
 .note.error {
 	background: #f7c8c8;
 	color: #a83c3c;
-	border-color: #f7c8c8;
 }
 
 .note.black {
 	background: #555;
 	color: #ddd;
-	border-color: #555;
 }
 
 /* ^Notes^ */
@@ -1342,11 +1337,11 @@ menu {
 }
 
 .input-s {
-	width: 50px !important;
+	width: 60px !important;
 }
 
 .input-m {
-	width: 100px !important;
+	width: 120px !important;
 }
 
 .input-m input {
@@ -1359,19 +1354,20 @@ menu {
 }
 
 .input-l {
-	width: 200px !important;
+	width: 220px !important;
 }
 
 .input-xl {
-	width: 300px !important;
+	width: 320px !important;
 }
 
 .input-xxl {
-	width: 400px !important;
+	width: 420px !important;
 }
 
 .input-all {
 	width: 100% !important;
+	box-sizing: border-box;
 }
 
 .input-auto {
@@ -1411,7 +1407,12 @@ menu {
 	font-size: 60px;
 	line-height: 1;
 	margin-left: -.05em;
-	font-weight: 300;
+}
+
+.t-ultra-head {
+	font-size: 100px;
+	line-height: 1;
+	margin-left: -.05em;
 }
 
 p.no-float {
@@ -1462,13 +1463,16 @@ small,
 	font-weight: 700;
 }
 
+.t-medium {
+	font-weight: 500;
+}
+
 .t-light {
 	font-weight: 300;
 }
 
-.t-date {
-	font-size: 80%;
-	color: #777;
+.t-thin {
+	font-weight: 100;
 }
 
 .t-count {
@@ -2092,7 +2096,6 @@ p.hovered-p:hover {
 		font-size: 48px;
 		line-height: 1;
 		margin-left: -.05em;
-		font-weight: 300;
 	}
 
 	.table-group {

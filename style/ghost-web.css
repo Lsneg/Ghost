@@ -1,17 +1,47 @@
 @import "../style/hl.css" all;
 
+body {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+::selection {
+	background-color: #eee;
+}
+
+::-moz-selection {
+	background-color: #eee;
+}
+
+body,
+input,
+button {
+	font-family: Helvetica Neue;
+	font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 300;
+}
+
 h2,
 h3,
 p,
-.note {
+.note,
+.sect-header h1,
+.sect-header-first h1 {
 	margin-right: 100px;
+	max-width: 1000px;
 }
 
 h2 {
 	padding-top: 30px;
 }
 
-.ghost .text-navbar {
+.text-navbar {
 	margin-top: 15px; 
 	margin-left: 30px;
 	position: fixed;
@@ -21,7 +51,7 @@ h2 {
 	box-shadow: inset 0 0 1px rgba(0,0,0,.7);
 }
 
-.ghost .text-navbar a {
+.text-navbar a {
 	line-height: 25px;
 	min-height: 25px;
 	background: #333;
@@ -30,20 +60,20 @@ h2 {
 	padding: 5px 15px;
 }
 
-.ghost .text-navbar a:hover,
-	.ghost .text-navbar a:focus {
+.text-navbar a:hover,
+	.text-navbar a:focus {
 	background: #444;
 	text-shadow: 0 0 15px #fff;
 }
 
-.ghost .text-navbar a:active {
+.text-navbar a:active {
 	color: #bbb;
 	text-shadow: 0 0 0 #fff;
 }
 
-.ghost .text-navbar .active a,
-.ghost .text-navbar .active a:hover,
-	.ghost .text-navbar .active a:focus {
+.text-navbar .active a,
+.text-navbar .active a:hover,
+	.text-navbar .active a:focus {
 	background: #f33333;
 }
 
@@ -52,11 +82,12 @@ h2 {
 	position: fixed;
 	top: 0;
 	bottom: 0;
+	background: #f8f8f8;
 }
 
 .leftnav {
 	margin: 0 0 0 30px;
-	width: 240px;
+	width: 220px;
 }
 
 /* _leftnav_ */
@@ -164,18 +195,19 @@ h2 {
 /* ^leftnav^ */
 
 .workplace {
-	padding: 15px 0 15px 15px;
-	margin: 0 0 0 270px;
+	padding: 15px 0 15px 45px;
+	margin: 0 0 0 250px;
+	background: #fff;
 }
 
 .sect-header-first {
-	padding: 50px 50px 0 0;
-	margin: 15px 0 100px 0;
+	padding: 200px 0 0 0;
+	margin: 15px 0 150px 0;
 }
 
 .sect-header {
 	margin: 15px 0 15px 0;
-	padding: 30px 50px 0 0;
+	padding: 30px 0 0 0;
 	border-bottom: 1px dotted #ccc;
 }
 
@@ -184,10 +216,40 @@ h2 {
 }
 
 .example {
-	padding: 0 100px 0 50px;
+	padding: 0 140px 0 40px;
 	margin: 25px 0;
+	max-width: 960px;
 	border-radius: 2px 0 0 2px;
 }
+
+.bg-padd {
+	background: #d4edd2;
+}
+
+.bg-block {
+	background: #f4f4f4;
+}
+
+.bg-block1 {
+	background: #e4e4e4;
+}
+
+.bg-block2 {
+	background: #d4d4d4;
+}
+
+.bd-l {
+	box-shadow: inset 1px 0 0 #c4c4c4;
+}
+
+.bd-lt {
+	box-shadow: inset 1px 1px 0 #c4c4c4;
+}
+
+.bg-marg {
+	background: #ebdbc5;
+}
+
 
 @media (min-width: 1800px) and (max-width: 500000000px) {
 

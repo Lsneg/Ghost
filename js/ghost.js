@@ -1,4 +1,4 @@
-(function(){ 
+(function(){
     var flag = true; 
     var ghost = {
         elems :[],

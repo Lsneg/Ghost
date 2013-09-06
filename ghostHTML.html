@@ -68,11 +68,13 @@ $(document).ready(function() {
 
 		<div class="workplace">
 			<div class="sect-header-first" id="startpage">
-				<h1>Добро пожаловать в kvadraGhost</h1>
-				<p><span class="t-smaller">version 1.017.05.13</span><br>
-					Здесь собраны все заготовки студии 4pr&sup2; для веб-строительства.
+				<div class="t-ultra-head t-thin">Ghost</div>
+				<h1 class="t-thin">Быстрый. Легкий. Простой.</h3>
+				<p>
+					<span class="t-smaller">version 1.017.08.13</span>
 				</p>
-				<h2>HTML & CSS</h2>
+				<br>
+				<h2 class="t-super-head t-thin">HTML & CSS</h2>
 			</div>
 
 			<div class="sect-header" id="workstart">
@@ -89,307 +91,286 @@ $(document).ready(function() {
 &lt;/html>
 </code>
 </pre>
-
-<pre><ol><li><span class="doc">&lt;!DOCTYPE html&gt;</span>
-<li><span class="tag">&lt;html&gt;</span>
-<li>  <span class="tag">&lt;head&gt;</span>
-<li>    <span class="tag">&lt;link <span class="atr">href=<span class="val">"ghost.css"</span> rel=<span class="val">"stylesheet"</span></span>&gt;</span>
-<li>  <span class="tag">&lt;&#47;head&gt;</span>
-<li><span class="tag">&lt;&#47;html&gt;</span>
-</ol></pre>
+			<p class="note info">
+				Гост изначально разрабатывался для создания адаптивных сайтов, поэтому основными единицами измерения являются относительные. Для наилучшего результата рекомендуется вести разработку с шириной страницы в 1280px.
+			</p>
 
 			<div class="sect-header" id="grid">
 				<h1>Сетка</h1>
 			</div>
-			<p>Для разнообразного расположения элементов, ему просто необходимо присвоить необходимый класс, например <code>&lt;div&nbsp;class="block w10"&gt;</code>. Класс <code>"block"</code> указывает, что элементы блочные и будут выстраиваться в линию.</p>
-			<p>При необходимости адаптировать количество элементов под разные разришения экранов, необходимо добавить контейнеру соответсвующий класс <code>"adapt"</code>. Пример: <code>&lt;div&nbsp;class="block-group adapt"&gt;</code>, где класс <code>"block-group"</code> обозначает контейнер элементов.</p>
-
-			<span class="note info">Адаптивность элементов в этой сетке разработывалось на экране с разришением 1280px в ширину. Для корректной роботы адаптивную сетку необходимо выстраивать при таком же расширении экрана.</span>
-			<p>Ниже представлена примеры расположения элементов c адаптивностью:</p>
-			
-		<div class="example" style="padding-left: 20px">
-			<div class="block-group adapt">
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
+			<p>
+				Для начала необходимо создать контейнер <code>&lt;div&nbsp;class="block-group"></code>, который будет содержать группу блоков.
+			</p>
+			<div class="example">
+				<div class="block-group bg-padd">
+					<div class="block w100 t-center bg-block t-gray5">По умолчанию имеет отступ сверху, слева и справа</div>
+					<br class="clear">
 				</div>
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
-				</div>
-
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
-				</div>
-
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
-				</div>
-
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
-				</div>
-
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
-				</div>
-
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
-				</div>
-
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
-				</div>
-
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
-				</div>
-
-
-				<div class="block w10">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
-							w10
-						</div>
-					</div>
-				</div>
-
-				<br class="clear" />
 			</div>
-
-			<div class="block-group adapt">
-							
-				<div class="block w16">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
-							w16
-						</div>
-					</div>
+			<p>
+				Для добавления нижнего отступа необходимо присвоить класс <code>.plate</code>. Чтобы убрать верхний и нижний оступы — <code>.slim</code>
+			</p>
+			<span class="note info">
+				Внутренние отступы по умолчанию изменяются в зависимости от ширины страницы
+			</span>
+			<p>
+				Внутри контейнера необходимо создать блоки <code>&lt;div&nbsp;class="block"></code>, которыми можно сформировать сетку. Для этого каждому блоку необходимо присвоить класс, указывающий ширину, например блок <code>&lt;div&nbsp;class="block w20"></code> будет иметь ширину 20%, <code>"w30"</code> — 30%, а <code>"w50"</code> соответственно 50% от ширины контейнера.
+			</p>
+			<div class="example">
+				<div class="block-group bg-padd">
+					<div class="block w20 t-center bg-block t-gray5">w20</div>
+					<div class="block w30 t-center bg-block bd-l t-gray5">w30</div>
+					<div class="block w50 t-center bg-block bd-l t-gray5">w50</div>
+					<br class="clear">
 				</div>
-							
-				<div class="block w16">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
-							w16
-						</div>
-					</div>
-				</div>
-							
-				<div class="block w16">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
-							w16
-						</div>
-					</div>
-				</div>
-							
-				<div class="block w16">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
-							w16
-						</div>
-					</div>
-				</div>
-							
-				<div class="block w16">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
-							w16
-						</div>
-					</div>
-				</div>
-							
-				<div class="block w16">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
-							w16
-						</div>
-					</div>
-				</div>
-
-
-				<br class="clear" />
 			</div>
-			
-			<div class="block-group adapt">
+			<p>
+				Чтобы содержимое соседних блоков не слипалось необходимо вложить дополнительный элемент с классом <code>.inblock</code>, который по умолчанию имеет верхний и боковые отступы:
+			</p>
+<pre>
+<code class="html">&lt;div class="block w20">
+	&lt;div class="inblock">w20&lt;/div>
+&lt;/div>
+</code>
+</pre>
+			<div class="example">
+				<div class="block-group bg-padd">
+					<div class="block w20 t-center bg-marg t-gray5">
+						<div class="inblock bg-block">w20</div>
+					</div>
+					<div class="block w30 t-center bg-marg bd-l t-gray5">
+						<div class="inblock bg-block">w30</div>
+					</div>
+					<div class="block w50 t-center bg-marg bd-l t-gray5">
+						<div class="inblock bg-block">w50</div>
+					</div>
+					<br class="clear">
+				</div>
+			</div>
+			<p>
+				При необходимости адаптировать количество элементов по ширине при разных разришениях экранов, необходимо добавить контейнеру класс <code>&lt;div&nbsp;class="block-group adapt"&gt;</code>
+			</p>
+
+			<span class="note info">
+				Ширина страницы при разработке адаптивной сетки — 1280px. Поэтому число в классе, например <code>w20</code> соответствует реальному числу ширины 20% только при просмотре на странице с шириной 1280px.
+			</span>
+			<p>
+				Для просмотра адаптации блоков, измените ширину страницы:<span class="f-right t-em t-gray4">Hапример перетаскиванием правого края страницы →</span>
+			</p>
+			<div class="example">
+				<div class="block-group adapt slim">
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<div class="block w10">
+						<div class="inblock t-center bg-block">
+							w10
+						</div>
+					</div>
+
+					<br class="clear">
+				</div>
+
+				<div class="block-group adapt">
+								
+					<div class="block w16">
+						<div class="inblock t-center bg-block1">
+							w16
+						</div>
+					</div>
+					
+					<div class="block w16">
+						<div class="inblock t-center bg-block1">
+							w16
+						</div>
+					</div>
+					
+					<div class="block w16">
+						<div class="inblock t-center bg-block1">
+							w16
+						</div>
+					</div>
+					
+					<div class="block w16">
+						<div class="inblock t-center bg-block1">
+							w16
+						</div>
+					</div>
+					
+					<div class="block w16">
+						<div class="inblock t-center bg-block1">
+							w16
+						</div>
+					</div>
+					
+					<div class="block w16">
+						<div class="inblock t-center bg-block1">
+							w16
+						</div>
+					</div>
+
+					<br class="clear">
+				</div>
 				
-				<div class="block w20">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
+				<div class="block-group adapt">
+					
+					<div class="block w20">
+						<div class="inblock t-center bg-block">
 							w20
 						</div>
 					</div>
-				</div>
-						
-				<div class="block w20">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
+
+					<div class="block w20">
+						<div class="inblock t-center bg-block">
 							w20
 						</div>
 					</div>
-				</div>
-						
-				<div class="block w20">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
+
+					<div class="block w20">
+						<div class="inblock t-center bg-block">
 							w20
 						</div>
 					</div>
-				</div>
-						
-				<div class="block w20">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
+
+					<div class="block w20">
+						<div class="inblock t-center bg-block">
 							w20
 						</div>
 					</div>
-				</div>
-						
-				<div class="block w20">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
+
+					<div class="block w20">
+						<div class="inblock t-center bg-block">
 							w20
 						</div>
 					</div>
+
+					<br class="clear">
 				</div>
-							
-				<br class="clear">
-			</div>
-			
-			<div class="block-group adapt">
 				
-				<div class="block w25">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
+				<div class="block-group adapt">
+					
+					<div class="block w25">
+						<div class="inblock t-center bg-block1">
 							w25
 						</div>
 					</div>
-				</div>
 
-				<div class="block w25">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
+					<div class="block w25">
+						<div class="inblock t-center bg-block1">
 							w25
 						</div>
 					</div>
-				</div>
-				
-				<div class="block w25">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
+
+					<div class="block w25">
+						<div class="inblock t-center bg-block1">
 							w25
 						</div>
 					</div>
-				</div>
-				
-				<div class="block w25">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
+
+					<div class="block w25">
+						<div class="inblock t-center bg-block1">
 							w25
 						</div>
 					</div>
+
+					<br class="clear">
 				</div>
 				
-				<br class="clear">
-			</div>
-			
-			<div class="block-group adapt">
-				
-				<div class="block w33">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
+				<div class="block-group adapt">
+					
+					<div class="block w33">
+						<div class="inblock t-center bg-block">
 							w33
 						</div>
 					</div>
-				</div>
 
-				<div class="block w33">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
+					<div class="block w33">
+						<div class="inblock t-center bg-block">
 							w33
 						</div>
 					</div>
-				</div>
-				
-				<div class="block w33">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #add;">
+
+					<div class="block w33">
+						<div class="inblock t-center bg-block">
 							w33
 						</div>
 					</div>
-				</div>
 
-				<br class="clear" />
-			</div>
-			
-			<div class="block-group adapt">
+					<br class="clear">
+				</div>
 				
-				<div class="block w50">
-					<div class="inblock">
-						<div class="r" style="line-height:30px; text-align: center; background: #d5f2f2;">
+				<div class="block-group adapt">
+					
+					<div class="block w50">
+						<div class="inblock t-center bg-block1">
 							w50
 						</div>
 					</div>
-				</div>
-				
-				<div class="block w50">
-					<div class="inblock">
-						<div style="line-height:30px; text-align: center; background: #d5f2f2;">
+					
+					<div class="block w50">
+						<div class="inblock t-center bg-block1">
 							w50
 						</div>
 					</div>
-				</div>
 
+					<br class="clear">
+				</div>
 				<br class="clear">
 			</div>
-			<br class="clear">
-			</div>
-			<p>Здесь представлены не все вариации размеров и расположения элементов. Еще есть возможность задавать статическию ширину блокам, а также несколько градаций статической высоты.</p>
-			<p>Подробнее смотрите в исходном файле <code>../ghost.css</code>, под коментарием <code>/*Grid*/</code>
+			<p>Здесь представлены не все вариации размеров элементов. Еще есть возможность задавать статическию ширину блокам, а также несколько градаций статической высоты.</p>
+			<p>Подробнее смотрите в исходном файле ../ghost.css, под коментарием <code>/*Grid*/</code>
 			</p>
 
 			<div class="sect-header" id="forms">
@@ -439,28 +420,32 @@ $(document).ready(function() {
 					<input type="text" id="inp-example">
 				</form>
 			</div>
-
-<pre><ol><li><span class="tag">&lt;form&gt;</span>
-<li>  <span class="tag">&lt;label <span class="atr">for=<span class="val">"inp-example"</span></span>&gt;</span><span>Имя лейбла</span><span class="tag">&lt;&#47;label&gt;</span><span class="tag">&lt;br&gt;</span>
-<li>  <span class="tag">&lt;input <span class="atr">type=<span class="val">"text"</span></span> <span class="atr">id=<span class="val">"inp-example"</span></span>&gt;</span><li><span class="tag">&lt;&#47;form&gt;</span>
-</ol></pre>
-			<br/>
+<pre>
+<code class="html">&lt;form>
+	&lt;label for="inp-example">Имя лейбла&lt;/label>&lt;br>
+	&lt;input type="text" id="inp-example">
+&lt;/form>
+</code>
+</pre>
 
 			<h2 id="checkbox-radio">Checkbox</h2>
 			<p>Чекбокс необходимо использовать внутри тега <code>&lt;label class="checkbox"&gt;</code> с описанием значения.</p>
-			<span class="note warning">Обязательно используйте <code><span class="atr">class=<span class="val">"checkbox"</span></span></code> при выстраивании чекбоксов в линию!
-			<br/>В других случаях применять класс не обязательно.</span>
 			<div class="example">
 				<label class="checkbox">
 					<input type="checkbox">Поставить галочку
 				</label>
 			</div>
-
-<pre><ol><li><span class="tag">&lt;label <span class="atr">class=<span class="val">"checkbox"</span></span>&gt;</span>
-<li>  <span class="tag">&lt;input <span class="atr">type=<span class="val">"checkbox"</span></span>&gt;</span> <span>Имя лейбла</span>
-<li><span class="tag">&lt;&#47;label&gt;</span>
-</ol></pre>
-			<br/>
+<pre>
+<code class="html">&lt;label class="checkbox">
+	&lt;input type="checkbox">Поставить галочку
+&lt;/label>
+</code>
+</pre>
+			<span class="note warning">
+				Обязательно используйте <code><span class="atr">class=<span class="val">"checkbox"</span></span></code> при выстраивании чекбоксов в линию!
+				<br>
+				В других случаях применять класс не обязательно.
+			</span>
 			
 			<h2 id="checkbox-radio">Radio</h2>
 			<p>Как и чекбоксы, радио-кнопки необходимо помещать в <code>&lt;label&gt;</code>, который в свою очередь должен иметь класс <code>radio</code>. Чтобы определить один из елементов выбраным по умолчанию, необходимо ему добавить свойство <code>&lt;checked&gt;</code>.
@@ -474,14 +459,15 @@ $(document).ready(function() {
 				</label>
 			</div>
 
-<pre><ol><li><span class="tag">&lt;label <span class="atr">class=<span class="val">"radio"</span></span>&gt;</span>
-<li>  <span class="tag">&lt;input <span class="atr">type=<span class="val">"radio"</span></span> <span class="atr">name=<span class="val">"radio"</span></span> <span class="atr">checked</span>&gt;</span><span>Левша</span>
-<li><span class="tag">&lt;&#47;label&gt;</span>
-<li><span class="tag">&lt;label <span class="atr">class=<span class="val">"radio"</span></span>&gt;</span>
-<li>  <span class="tag">&lt;input <span class="atr">type=<span class="val">"radio"</span></span> <span class="atr">name=<span class="val">"radio"</span></span>&gt;</span><span>Правша</span>
-<li><span class="tag">&lt;&#47;label&gt;</span>
-</ol></pre>
-			<br/>
+<pre>
+<code class="html">&lt;label class="radio">
+	&lt;input type="radio" name="radio" checked>Левша
+&lt;/label>
+&lt;label class="radio">
+	&lt;input type="radio" name="radio">Правша
+&lt;/label>
+</code>
+</pre>
 
 			<h2 id="textarea">Textarea</h2>
 			<p>Высоту тектового поля можна задавать с помошью атрибута <code>rows</code>.</p>
@@ -489,9 +475,10 @@ $(document).ready(function() {
 				<textarea rows="3"></textarea>
 			</div>
 
-<pre><ol><li><span class="tag">&lt;textarea <span class="atr">rows=<span class="val">"3"</span></span>&gt;</span><span class="tag">&lt;&#47;textarea&gt;</span>
-</ol></pre>
-			<br/>
+<pre>
+<code class="html">&lt;textarea rows="3">&lt;/textarea>
+</code>
+</pre>
 
 			<h2 id="select">Select</h2>
 			<p>С выпадающим списком:</p>
@@ -504,17 +491,19 @@ $(document).ready(function() {
 				</select>
 			</div>
 
-<pre><ol><li><span class="tag">&lt;select&gt;</span>
-<li>  <span class="tag">&lt;option&gt;</span><span>Мужик</span><span class="tag">&lt;&#47;option&gt;</span>
-<li>  <span class="tag">&lt;option&gt;</span><span>Баба</span><span class="tag">&lt;&#47;option&gt;</span>
-<li>  <span class="tag">&lt;option&gt;</span><span>Таиланд</span><span class="tag">&lt;&#47;option&gt;</span>
-<li>  <span class="tag">&lt;option&gt;</span><span>Не определено</span><span class="tag">&lt;&#47;option&gt;</span>
-<li><span class="tag">&lt;&#47;select&gt;</span>
-</ol></pre>
-			<br/>
+<pre>
+<code class="html">&lt;select>
+	&lt;option>Мужик&lt;/option>
+	&lt;option>Баба&lt;/option>
+	&lt;option>Таиланд&lt;/option>
+	&lt;option>Не определено&lt;/option>
+&lt;/select>
+</code>
+</pre>
+
 			<p>Для возможности выбора нескольких элементов необходимо добавить свойство <code>"multiple"</code> </p>
 			<div class="example">
-				<select multiple="multiple">
+				<select multiple>
 				  <option>Мужик</option>
 				  <option>Баба</option>
 				  <option>Таиланд</option>
@@ -522,14 +511,11 @@ $(document).ready(function() {
 				</select>
 			</div>
 
-<pre><ol><li><span class="tag">&lt;select <span class="atr">multiple=<span class="val">"multiple"</span></span>&gt;</span>
-<li>  <span class="tag">&lt;option&gt;</span><span>Мужик</span><span class="tag">&lt;&#47;option&gt;</span>
-<li>  <span class="tag">&lt;option&gt;</span><span>Баба</span><span class="tag">&lt;&#47;option&gt;</span>
-<li>  <span class="tag">&lt;option&gt;</span><span>Таиланд</span><span class="tag">&lt;&#47;option&gt;</span>
-<li>  <span class="tag">&lt;option&gt;</span><span>Не определено</span><span class="tag">&lt;&#47;option&gt;</span>
-<li><span class="tag">&lt;&#47;select&gt;</span>
-</ol></pre>
-			<br/>
+<pre>
+<code class="html">&lt;select multiple>
+	..
+</code>
+</pre>
 
 
 <br/>
