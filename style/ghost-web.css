@@ -21,6 +21,10 @@ button {
 	font-weight: 300;
 }
 
+.t-ultra-head {
+	font-size: 120px;
+}
+
 h1,
 h2,
 h3 {
@@ -216,7 +220,7 @@ h2 {
 }
 
 .example {
-	padding: 0 140px 0 40px;
+	padding: 0 125px 0 25px;
 	margin: 25px 0;
 	max-width: 960px;
 	border-radius: 2px 0 0 2px;

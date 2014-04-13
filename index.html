@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="style/ghost-web.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/jquery1_10_2.js.js"></script>
+<script src="js/scroll.js"></script>
 <script src="js/highlight.js"></script>
 <script>
 hljs.initHighlightingOnLoad();
@@ -58,9 +59,10 @@ $(document).ready(function() {
 							<li><a href="#checkbox-radio">Checkbox и radio</a></li>
 							<li><a href="#textarea">Textarea</a></li>
 							<li><a href="#select">Select</a></li>
+							<li><a href="#button">Button</a></li>
 						</ul>
 					</li>
-					<li><a href="#select">Таблица</a></li>
+					<li><a href="#table">Таблица</a></li>
 				</ul>
 			</div>
 		</div>
@@ -83,7 +85,7 @@ $(document).ready(function() {
 			<p>Для начала необходимо подключить стили:</p>
 
 <pre>
-<code class="html">&lt;!DOCTYPE html>
+<code>&lt;!DOCTYPE html>
 &lt;html>
 	&lt;head>
 		&lt;link href="ghost.css" rel="stylesheet">
@@ -128,7 +130,7 @@ $(document).ready(function() {
 				Чтобы содержимое соседних блоков не слипалось необходимо вложить дополнительный элемент с классом <code>.inblock</code>, который по умолчанию имеет верхний и боковые отступы:
 			</p>
 <pre>
-<code class="html">&lt;div class="block w20">
+<code>&lt;div class="block w20">
 	&lt;div class="inblock">w20&lt;/div>
 &lt;/div>
 </code>
@@ -413,54 +415,56 @@ $(document).ready(function() {
 			</div>
 
 			<h2 id="input">Input</h2>
-			<p>Самый обычный <code>&lt;input&gt;</code> :</p>
+			<p>Самое обычное поле для ввода:</p>
 			<div class="example">
 				<form>
-					<label for="inp-example">Имя лейбла</label><br>
-					<input type="text" id="inp-example">
+					<label for="inp-example">Имя поля</label><br>
+					<input type="text" id="inp-example" placeholder="Подсказка">
 				</form>
 			</div>
 <pre>
-<code class="html">&lt;form>
-	&lt;label for="inp-example">Имя лейбла&lt;/label>&lt;br>
-	&lt;input type="text" id="inp-example">
+<code>&lt;form>
+	&lt;label for="inp-example">Имя поля&lt;/label>&lt;br>
+	&lt;input type="text" id="inp-example" placeholder="Подсказка">
 &lt;/form>
 </code>
 </pre>
+			<span class="note">
+				Идентификатор <code>"inp-example"</code> используеться для связки с именем поля <code>&lt;label></code>. Теперь нажимая на «Имя поля» само поле получает фокус и активируется
+			</span>
 
 			<h2 id="checkbox-radio">Checkbox</h2>
-			<p>Чекбокс необходимо использовать внутри тега <code>&lt;label class="checkbox"&gt;</code> с описанием значения.</p>
+			<p>Чекбокс необходимо использовать внутри тега <code>&lt;label&gt;</code> с описанием значения:</p>
 			<div class="example">
-				<label class="checkbox">
+				<label>
 					<input type="checkbox">Поставить галочку
 				</label>
 			</div>
 <pre>
-<code class="html">&lt;label class="checkbox">
+<code>&lt;label>
 	&lt;input type="checkbox">Поставить галочку
 &lt;/label>
 </code>
 </pre>
-			<span class="note warning">
-				Обязательно используйте <code><span class="atr">class=<span class="val">"checkbox"</span></span></code> при выстраивании чекбоксов в линию!
-				<br>
-				В других случаях применять класс не обязательно.
+			<span class="note">
+				Обязательно оборачивайте чекбокс тегом <code>&lt;label></code>. Таким образом ставить галочку проще — можно не целиться в чекбокс, а нажать на его описание. Это очень важно, т.к. многи пользователи привыкли к такому паттерну использования
 			</span>
 			
 			<h2 id="checkbox-radio">Radio</h2>
-			<p>Как и чекбоксы, радио-кнопки необходимо помещать в <code>&lt;label&gt;</code>, который в свою очередь должен иметь класс <code>radio</code>. Чтобы определить один из елементов выбраным по умолчанию, необходимо ему добавить свойство <code>&lt;checked&gt;</code>.
+			<p>Как и чекбоксы, радио-кнопки необходимо помещать в <code>&lt;label&gt;</code>. Чтобы определить один из елементов выбраным по умолчанию, необходимо ему добавить свойство <code>&lt;checked&gt;</code>.
 			</p>
 			<div class="example">
-				<label class="radio">
+				<label>
 					<input type="radio" name="radio" checked>Левша
 				</label>
+				&emsp;
 				<label class="radio">
 					<input type="radio" name="radio">Правша
 				</label>
 			</div>
 
 <pre>
-<code class="html">&lt;label class="radio">
+<code>&lt;label class="radio">
 	&lt;input type="radio" name="radio" checked>Левша
 &lt;/label>
 &lt;label class="radio">
@@ -468,20 +472,26 @@ $(document).ready(function() {
 &lt;/label>
 </code>
 </pre>
+			<span class="note">
+				Радио-кнопки для корректной работы должны иметь одинаковое имя (в примере <code>name="radio"</code>) — без этого они не будут взаимоисключаться
+			</span>
+
 
 			<h2 id="textarea">Textarea</h2>
-			<p>Высоту тектового поля можна задавать с помошью атрибута <code>rows</code>.</p>
+			<p>Высоту тектового поля можна задавать с помошью атрибута <code>rows</code>. Ширина стандартная, как у инпута, но ее можно изменять при помощи класов (например <code>.input-s</code>)
+			</p>
 			<div class="example">
 				<textarea rows="3"></textarea>
 			</div>
 
 <pre>
-<code class="html">&lt;textarea rows="3">&lt;/textarea>
+<code>&lt;textarea rows="3">&lt;/textarea>
 </code>
 </pre>
 
 			<h2 id="select">Select</h2>
-			<p>С выпадающим списком:</p>
+			<p>Размеры выпадающего списка определяется по самому длинному элементу списка, но можно указать фиксированную ширину как инпутам.
+			</p>
 			<div class="example">
 				<select>
 				  <option>Мужик</option>
@@ -492,7 +502,7 @@ $(document).ready(function() {
 			</div>
 
 <pre>
-<code class="html">&lt;select>
+<code>&lt;select>
 	&lt;option>Мужик&lt;/option>
 	&lt;option>Баба&lt;/option>
 	&lt;option>Таиланд&lt;/option>
@@ -501,136 +511,103 @@ $(document).ready(function() {
 </code>
 </pre>
 
-			<p>Для возможности выбора нескольких элементов необходимо добавить свойство <code>"multiple"</code> </p>
+			<h2 id="button">Button</h2>
 			<div class="example">
-				<select multiple>
-				  <option>Мужик</option>
-				  <option>Баба</option>
-				  <option>Таиланд</option>
-				  <option>Не определено</option>
-				</select>
+				<table class="vertical-mid inp-compact">
+					<tbody>
+						<tr>
+							<td>Основная</td>
+							<td><button type="text">Кнопка</button></td>
+							<td><code>&lt;button></code></td>
+						</tr>
+						<tr>
+							<td>Дополнительная</td>
+							<td><button type="text" class="gray">Кнопка</button></td>
+							<td><code>&lt;button class="gray"></code></td>
+						</tr>
+						<tr>
+							<td>Синяя</td>
+							<td><button type="text" class="blue">Кнопка</button></td>
+							<td><code>&lt;button class="blue"></code></td>
+						</tr>
+						<tr>
+							<td>Красная</td>
+							<td><button type="text" class="red">Кнопка</button></td>
+							<td><code>&lt;button class="red"></code></td>
+						</tr>
+						<tr>
+							<td>Прозрачная</td>
+							<td><button type="text" class="link"><ins>Кнопка</ins></button></td>
+							<td><code>&lt;button class="link"></code></td>
+						</tr>
+						<tr>
+							<td>Стрелка</td>
+							<td><button type="text" class="btn-larr">Кнопка</button></td>
+							<td><code>&lt;button class="btn-larr"></code></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 
+			<h2 id="table">Таблицы</h2>
+			<p>Стандартная таблица без разделителей и фона:</p>
+			<div class="example">
+				<table class="vertical-mid inp-compact">
+					<tbody>
+						<tr>
+							<th>№</th>
+							<th>Имя</th>
+							<th>Электронная почта</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Леонтий</td>
+							<td>leontiy@4pr2.com</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Виталий</td>
+							<td>vitaly@4pr2.com</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Дмитрий</td>
+							<td>mr@4pr2.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>	
 <pre>
-<code class="html">&lt;select multiple>
-	..
+<code>&lt;table>
+	&lt;tbody>
+		&lt;tr>
+			&lt;th>№&lt;/th>
+			&lt;th>Имя&lt;/th>
+			&lt;th>Электронная почта&lt;/th>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>1&lt;/td>
+			&lt;td>Леонтий&lt;/td>
+			&lt;td>leontiy@4pr2.com&lt;/td>
+		&lt;/tr>
+		...
+	&lt;/tbody>
+&lt;/table>
 </code>
 </pre>
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>	<form>
-			<table>
-				<tr>
-					<td><label for='i-name'>Имя</label></td>
-					<td>
-						<input type="text" id="i-name" name="name">
-					</td>
-				</tr>
-				<tr>
-					<td>Фамилия</td>
-					<td><input type="text" name="name">
-					</td>
-				</tr>
-				<tr>
-					<td>Компания</td>
-					<td><input type="text" name="name">
-					</td>
-				</tr>
-				<tr>
-					<td>Сколько лет</td>
-					<td><select>
-						  <option>1</option>
-						  <option>2</option>
-						  <option>3</option>
-						  <option>4</option>
-						  <option>Старый пердун</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>Какие нравяться?</td>
-					<td><select multiple="multiple">
-						  <option>1</option>
-						  <option>2</option>
-						  <option>3</option>
-						  <option>4</option>
-						  <option>12</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>Голосовать</td>
-					<td>
-						<label class="checkbox">
-   							<input type="checkbox"> Голосую за Лупана
-						</label>
-					</td>
-  				</tr>
-  				<tr>
-					<td>А если найду?</td>
-					<td class="search">
-   						
-   						<input type="text"><button type="submit">Поиск</button>
-  					
-					</td>
-  				</tr>
-				<tr>
-					<td>Опиши себя</td>
-					<td>
-						<textarea rows="3"></textarea>
-					</td>
-				</tr>
-				<tr>
-					<td>Политические взгляды</td>
-					<td>
-						<label class="radio">
-							<input type="radio" name="optionsRadios" checked>Левша
-						</label>
-						<label class="radio">
-							<input type="radio" name="optionsRadios">Правша
-						</label>
-					</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>
-						<button type="text" name="name">Сохранить</button>
-						<button type="text" name="name" class="gray">Отмена</button>
-					</td>
-				</tr>
-			</table>
-		</form>
-			<div class="clear"></div>
+		<br class="clear">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		</div>		
 	</div>
-	<br class="clear"/>
-</div>	
+</div>
+
 </body>
 </html>
 

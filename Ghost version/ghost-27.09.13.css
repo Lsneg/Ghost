@@ -12,10 +12,6 @@ body {
 	font-family: arial, helvetica, sans-serif;
 }
 
-input, textarea { outline:none; }
-input:active, textarea:active { outline:none; }
-:focus { outline:none; }
-
 /* _Links_ */
 
 a {
@@ -194,17 +190,22 @@ img {
 
 code {
 	font-size: 90%;
+	line-height: 1;
+	background-color: #f6f6f0;
+	border-top: 3px solid #f6f6f0;
+	padding: 0 5px 3px 5px;
+	margin-top: -2px;
 }
 
 pre code {
 	display: block;
+	font-size: 100%;
 	line-height: 1.4;
-	padding: 0 25px;
+	padding: 15px 25px;
     white-space: pre;
     clear: both;
     overflow-x: auto;
-	background-color: transparent;
-	border: 0;
+	background-color: #f6f6f0;
 }
 
 pre {
@@ -279,9 +280,9 @@ table.auto th {
 
 /* Для таблиц содержащих дание и поля.
    Компактная компановка инпутов в таблице */
-table.inp-compact tr td input,
-table.inp-compact tr td button {
+table.inp-compact tr td input {
 	margin: -6px 0 -4px 0;
+	line-height: 1;
 }
 
 table.vertical-mid td {
@@ -401,7 +402,6 @@ input[type="color"] {
 	vertical-align: middle;
 	background-color: white;
 	border: 1px solid #ccc;
-	box-sizing: border-box;
 	-webkit-transition: border 0.2s;
 	-moz-transition: border 0.2s;
 	-o-transition: border 0.2s;
@@ -447,7 +447,6 @@ textarea {
     vertical-align: top;
     font-size: 90%;
     max-width: 100%;
-	box-sizing: border-box;
 }
 
 button,
@@ -465,10 +464,8 @@ input[type="submit"] {
 	vertical-align: middle;
 	border: 0;
 	border-radius: 1px;
-	letter-spacing: .5px;
 	color: #fff;
 	cursor: pointer;
-	box-sizing: border-box;
 }
 
 button:hover,
@@ -477,7 +474,7 @@ input[type="submit"]:hover,
 	button:focus,
 	a.button:focus,
 	input[type="submit"]:focus {
-	background-color: #444;
+	background: #444;
 }
 
 button:active,
@@ -486,27 +483,15 @@ input[type="submit"]:active {
 	background-color: #777;
 }
 
-.btn-rarr:after,
 .btn-larr:before {
 	content: '';
 	position: absolute;
-	margin: -4px 0 0 -25px;
+	margin: -4px 0 0 -26px;
 	width: 0;
     height: 0;
     border-top: 14px solid transparent;
-    border-right: 10px solid #333;
+    border-right: 10px solid #222;
     border-bottom: 14px solid transparent;
-}
-
-	.btn-rarr:hover:after, .btn-rarr:focus:after,
-	.btn-larr:hover:before, .btn-larr:focus:before {
-	    border-right-color: #444;
-	}
-
-.btn-rarr:after {
-	border-right: 0;
-	margin: -4px 0 0 15px;
-	border-left: 10px solid #333;
 }
 
 
@@ -553,13 +538,11 @@ input[type="submit"]:active {
 
 /* Серая кнопка */
 button.gray,
-button.link.gray:hover, button.link.gray:focus,
-a.button.link.gray:hover, a.button.link.gray:focus,
 a.button.gray,
 .upload-btn.gray,
 input[type="reset"],
 input[type="submit"].gray {
-	background-color: #f3f3ee;
+	background-color: #f4f5e1;
 	color: #333;
 }
 
@@ -597,15 +580,13 @@ input[type="submit"].gray:hover,
 
 	.gray.btn-larr:hover:before,
 	.gray.btn-rarr:hover:after,
-		.gray.btn-larr:focus:before,
-		.gray.btn-rarr:focus:after {
+	.gray.btn-larr:focus:before,
+	.gray.btn-rarr:focus:after {
 	    border-left-color: #444;
 	    border-right-color: #444;
 	}
 
 button.gray:active,
-button.link.gray:active,
-a.button.link.gray:active,
 a.button.gray:active,
 .upload-btn.gray:active,
 input[type="reset"]:active,
@@ -625,59 +606,25 @@ button.blue,
 a.button.blue,
 input[type="submit"].blue {
 	background-color: #00b5b5;
+	border-color: #00b5b5;
 	color: #fff;
 }
 
 button.blue:hover,
-button.link.blue:hover,
-a.button.link.blue:hover,
 a.button.blue:hover,
 input[type="submit"].blue:hover,
 	button.blue:focus,
-	button.link.blue:focus,
-	a.button.link.blue:focus,
 	a.button.blue:focus,
 	input[type="submit"].blue:focus {
 	background-color: #0cc;
+	border-color: #0cc;
 	color: #fff;
 }
 
 button.blue:active,
-button.link.blue:active,
-a.button.link.blue:active,
 a.button.blue:active,
 input[type="submit"].blue:active {
-	background-color: #0aa;
-}
-
-/* Красная кнопка. Предупреждающая */
-button.red,
-a.button.red,
-input[type="submit"].red {
-	background-color: #f33333;
-	color: #fff;
-}
-
-button.red:hover,
-button.link.red:hover,
-a.button.link.red:hover,
-a.button.red:hover,
-input[type="submit"].red:hover,
-	button.red:focus,
-	button.link.red:focus,
-	a.button.link.red:focus,
-	a.button.red:focus,
-	input[type="submit"].red:focus {
-	background-color: #f55555;
-	color: #fff;
-}
-
-button.red:active,
-button.link.red:active,
-a.button.link.red:active,
-a.button.red:active,
-input[type="submit"].red:active {
-	background-color: #f11111;
+	border-color: #00a0a0;
 }
 
 
@@ -687,29 +634,23 @@ input[type="submit"].red:active {
 button.link,
 a.button.link {
 	background-color: transparent;
-	color: #0aa;
+	border-color: transparent;
+	color: #333;
 }
-		/*  ins – что бы текст был подчеркнут, как у ссыоки */
-		button.link ins,
-		a.button.link ins {
-			text-decoration: none;
-			border-bottom: 1px solid #cee;
-		}
-		button.link:hover ins, button.link:focus ins,
-		a.button.link:hover ins, a.button.link:focus ins {
-			text-decoration: none;
-			border-bottom: 0;
-		}
 
-button.link:hover, button.link:focus,
-a.button.link:hover, a.button.link:focus {
-	background-color: #333;
-	color: #fff;
+button.link:hover,
+a.button.link:hover,
+	button.link:focus,
+	a.button.link:focus {
+	background-color: #e6e6d9;
+	border-color: #ccc;
+	color: #000;
 }
 
 button.link:active,
 a.button.link:active {
-	background-color: #777;
+	background-color: #e6e6d9;
+	border-color: #888;
 }
 
 /* Для того, что бы последная кнопка в линии других не слетала изза отступа */
@@ -1318,7 +1259,6 @@ menu {
 
 .switcher-link.inline>span {
 	display: inline-block;
-	clear: none;
 	padding: 0 1em;
 	margin: 0;
 }
@@ -2185,7 +2125,7 @@ p.hovered-p:hover {
 
 }
 
-@media (min-width: 1366px) and (max-width: 1800px) {
+@media (min-width: 1366px) and (max-width: 1600px) {
 
 	.adapt .w25 {
 		width: 20%;
